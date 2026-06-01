@@ -2,18 +2,18 @@
 	"nodes":[
 		{"id":"95f786098f22ad08","type":"file","file":"Call me maybe/1. Read  prompt.md","x":-920,"y":-920,"width":400,"height":179},
 		{"id":"8b23a0db9faae9f0","type":"file","file":"Call me maybe/2. build a text that give the LLM context.md","x":-920,"y":-500,"width":400,"height":241},
-		{"id":"e6b2959dee68c508","type":"text","text":"3.Encode\nencode that whole text into token IDs and feed it to the LLM\n","x":-293,"y":-464,"width":250,"height":205},
 		{"id":"dc11e10a2262ab95","type":"file","file":"Call me maybe/4. LLM generates response token by token.md","x":-243,"y":-890,"width":400,"height":120},
-		{"id":"67c137b8db385620","x":120,"y":-589,"width":400,"height":179,"type":"file","file":"Call me maybe/5. constrained decoding.md"},
-		{"id":"2048f8b386cd85c2","x":640,"y":-865,"width":400,"height":248,"type":"file","file":"Call me maybe/6. generate function name.md"},
-		{"id":"ac15ebfc4063fe9b","x":1080,"y":-500,"width":400,"height":400,"type":"file","file":"Call me maybe/7. Arguments.md"}
+		{"id":"67c137b8db385620","type":"file","file":"Call me maybe/5. constrained decoding.md","x":120,"y":-589,"width":400,"height":179},
+		{"id":"2048f8b386cd85c2","type":"file","file":"Call me maybe/6. generate function name.md","x":640,"y":-865,"width":400,"height":248},
+		{"id":"ac15ebfc4063fe9b","type":"file","file":"Call me maybe/7. Arguments.md","x":1080,"y":-500,"width":400,"height":400},
+		{"id":"9d4d8c2063b92eec","x":-380,"y":-504,"width":400,"height":249,"type":"file","file":"Call me maybe/3. Encode.md"}
 	],
 	"edges":[
-		{"id":"2aa4eaf56312005b","fromNode":"8b23a0db9faae9f0","fromSide":"right","toNode":"e6b2959dee68c508","toSide":"left"},
 		{"id":"283eeba679dad785","fromNode":"95f786098f22ad08","fromSide":"bottom","toNode":"8b23a0db9faae9f0","toSide":"top"},
-		{"id":"d5c9f4b511e5297c","fromNode":"e6b2959dee68c508","fromSide":"top","toNode":"dc11e10a2262ab95","toSide":"left"},
 		{"id":"a7d9f6c586973b7f","fromNode":"dc11e10a2262ab95","fromSide":"right","toNode":"67c137b8db385620","toSide":"left"},
 		{"id":"14d63841c11ab752","fromNode":"67c137b8db385620","fromSide":"right","toNode":"2048f8b386cd85c2","toSide":"left"},
-		{"id":"b7a928eb8a4ad4b7","fromNode":"2048f8b386cd85c2","fromSide":"right","toNode":"ac15ebfc4063fe9b","toSide":"left"}
+		{"id":"b7a928eb8a4ad4b7","fromNode":"2048f8b386cd85c2","fromSide":"right","toNode":"ac15ebfc4063fe9b","toSide":"left"},
+		{"id":"bd839d4162b836f6","fromNode":"8b23a0db9faae9f0","fromSide":"right","toNode":"9d4d8c2063b92eec","toSide":"left"},
+		{"id":"13c765d4324fe410","fromNode":"9d4d8c2063b92eec","fromSide":"top","toNode":"dc11e10a2262ab95","toSide":"left"}
 	]
 }

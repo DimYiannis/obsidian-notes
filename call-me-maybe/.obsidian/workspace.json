@@ -15,9 +15,9 @@
               "state": {
                 "file": "Call me maybe/Call me maybe workflow.canvas",
                 "viewState": {
-                  "x": 286.384145413413,
-                  "y": -408.6815247382922,
-                  "zoom": -0.9322120263854745
+                  "x": 280,
+                  "y": -510,
+                  "zoom": -1.2293311021655862
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "49d0406455de9c0b",
@@ -273,17 +272,17 @@
   },
   "active": "e4e78c890823e4d4",
   "lastOpenFiles": [
-    "Untitled 1.canvas",
-    "Call me maybe/Call me maybe workflow.canvas",
+    "Call me maybe/1. Read  prompt.md",
+    "Call me maybe/5. constrained decoding.md",
     "Call me maybe/3. Encode.md",
+    "Call me maybe/Call me maybe workflow.canvas",
+    "Call me maybe/4. LLM generates response token by token.md",
+    "Untitled 1.canvas",
     "Untitled.base",
     "2026-05-27.md",
-    "Call me maybe/1. Read  prompt.md",
     "Call me maybe/2. build a text that give the LLM context.md",
     "Call me maybe/7. Arguments.md",
     "Call me maybe/6. generate function name.md",
-    "Call me maybe/5. constrained decoding.md",
-    "Call me maybe/4. LLM generates response token by token.md",
     "Call me maybe",
     "2026-04-19.md"
   ]

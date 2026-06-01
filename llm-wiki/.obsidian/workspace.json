@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/rlhf.md",
+                "file": "wiki/sources/2026-06-01-call-me-maybe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rlhf"
+              "title": "2026-06-01-call-me-maybe"
             }
           }
         ]
@@ -182,10 +182,13 @@
   },
   "active": "5588223f3452224a",
   "lastOpenFiles": [
+    "wiki/sources/2026-06-01-call-me-maybe.md",
+    "wiki/entities/alphago.md",
+    "wiki/sources/2026-06-01-tokenization-embeddings-context.md",
+    "wiki/concepts/rlhf.md",
     "wiki/concepts/chain-of-thought.md",
     "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
     "wiki/concepts/tokenization.md",
-    "wiki/sources/2026-06-01-tokenization-embeddings-context.md",
     "wiki/sources/2026-06-01-karpathy-llm-intro.md",
     "wiki/sources",
     "wiki/concepts/embeddings.md",
@@ -193,11 +196,9 @@
     "wiki/entities/andrej-karpathy.md",
     "log.md",
     "index.md",
-    "wiki/entities/alphago.md",
     "wiki/entities/deepseek-r1.md",
     "wiki/concepts/context-window.md",
     "wiki/concepts/hallucination.md",
-    "wiki/concepts/rlhf.md",
     "wiki/concepts/reinforcement-learning-llm.md",
     "wiki/concepts/base-model.md",
     "wiki/concepts/supervised-fine-tuning.md",
@@ -209,7 +210,6 @@
     "wiki/concepts/token-character-mismatch.md",
     "wiki/concepts/function-calling.md",
     "raw/2026-06-01-constrained-decoding-function-calling.md",
-    "wiki/sources/2026-06-01-llm-wiki-idea.md",
     "wiki/synthesis",
     "wiki/meta",
     "wiki/concepts",

@@ -12,6 +12,7 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - 2026-06-01-constrained-decoding-function-calling — constrained decoding for LLM function calling; logit masking, FSM vs CFG/PDA, XGrammar, FANTASE
 - 2026-06-01-karpathy-llm-intro — Andrej Karpathy's full LLM training pipeline walkthrough; pre-training, SFT, RL, hallucinations, sharp edges
 - 2026-06-01-tokenization-embeddings-context — personal notes on tokens, embeddings, vocabulary tradeoff, effective context window
+- 2026-06-01-call-me-maybe — personal project: function calling via constrained decoding; JSON state machine, 30%→100% validity, greedy decoding insight
 
 ---
 
@@ -44,10 +45,10 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - context-window — working memory; measured in tokens; effective context scales with tokenization quality (source_count: 2)
 
 ### LLM Inference / Structured Output
-- constrained-decoding — inference-time structural guarantee via logit masking; FSM or CFG/PDA grammar tracking (source_count: 1)
+- constrained-decoding — inference-time structural guarantee via logit masking; JSON state machine; greedy decoding optimal (source_count: 2)
 - logit-masking — core mechanism: invalid tokens set to −∞ before softmax → zero probability (source_count: 1)
-- function-calling — LLM generates structured JSON arguments for external tools/APIs (source_count: 2)
-- token-character-mismatch — chars vs multi-char tokens bridged by pre-computing per-vocab-token grammar states (source_count: 2)
+- function-calling — LLM generates structured JSON arguments for external tools/APIs; 30%→100% validity with constrained decoding (source_count: 3)
+- token-character-mismatch — chars vs multi-char tokens; prefix-matching for multi-token identifiers (source_count: 3)
 
 ---
 

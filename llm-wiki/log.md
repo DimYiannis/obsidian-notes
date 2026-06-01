@@ -22,6 +22,11 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - index.md updated to remove schema entries; note added pointing to .schema/
 - Pages moved: 7
 
+## [2026-06-01] ingest | Call me maybe — Function Calling in LLMs (personal project)
+- Source: .raw/2026-06-01-call-me-maybe.md (user's own project; source_type: project)
+- Concepts updated: constrained-decoding (source_count→2, JSON state machine + greedy decoding sections), function-calling (source_count→3, quantified impact + two compliance levels), token-character-mismatch (source_count→3, prefix-matching section)
+- Pages created: 2 (source page, raw) | Pages updated: 5
+
 ## [2026-06-01] ingest | LLM Tokenization, Embeddings, and Context Windows (personal notes)
 - Source: .raw/2026-06-01-tokenization-embeddings-context.md (user's own notes; source_type: note)
 - Concepts created: embeddings

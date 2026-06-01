@@ -2,7 +2,7 @@
 title: "Constrained Decoding"
 type: concept
 tags: [llm, inference, structured-output, function-calling]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -29,6 +29,25 @@ Inference-time technique that guarantees structurally valid LLM output by insert
 
 **FSM** (Finite-State Machine): fast, simple, fails on recursive structures (nested JSON, variable arrays).
 **CFG/PDA** (Context-Free Grammar / Pushdown Automaton): handles recursion natively; higher state overhead.
+
+## JSON parse state machine
+
+For JSON-structured output, the grammar tracker is a lightweight **JSON parse state machine** that knows what is valid at each position without fully parsing the incomplete output. States include:
+
+- `expecting_key` — inside an object, waiting for a quoted key
+- `inside_string_value` — inside a string; most tokens valid but closing quote ends the state
+- `expecting_number` — only digit tokens, `-`, `.` are valid
+- `expecting_function_name` — only tokens that are valid prefixes of known function names
+
+The mask is **position-aware**, not global. The valid token set changes at every generation step depending on current parse state. This simultaneously enforces:
+1. **Syntactic compliance** — valid JSON structure throughout
+2. **Semantic compliance** — function name from known set, argument keys matching definition, types matching schema (number, string, boolean)
+
+Empirical result: unconstrained 0.6B model (Qwen3-0.6B) → ~30% valid JSON. Same model with JSON state machine constrained decoding → **100%** schema-compliant output. Reliability from structural guidance, not model size.
+
+## Greedy decoding under constraint
+
+When invalid tokens are already masked to −∞, temperature/sampling adds noise without benefit — it can only cause the model to pick a suboptimal token from the remaining valid set. **Greedy decoding is the optimal sampling strategy for constrained structured output.**
 
 ## Reasoning quality tradeoff
 
