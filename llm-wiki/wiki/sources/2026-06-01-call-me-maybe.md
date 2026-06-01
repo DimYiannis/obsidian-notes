@@ -27,7 +27,24 @@ Personal project implementing [[function-calling]] via [[constrained-decoding]] 
 - [[function-calling]] — the application; quantitative result (30%→100%) documented
 - [[token-character-mismatch]] — subword prefix-matching is the practical form of this challenge
 
+## Full algorithm steps
+
+1. Track JSON parse state (state machine)
+2. Determine valid next strings given current state + schema
+3. Map strings to token IDs via vocabulary prefix matching
+4. Mask invalid logits to `-inf`
+5. Argmax over remaining valid logits (greedy)
+6. Advance state machine
+7. Repeat until done
+
+## Key papers (theoretical foundation)
+
+- Willard & Louf (2023) — *Efficient Guided Generation for Large Language Models* — FSM-based constrained generation; direct foundation of this project
+- Don't Fine-Tune, Decode (2023) — syntax error-free tool use via constrained decoding
+- JSONSchemaBench (2024) — benchmark across Outlines, XGrammar, llama.cpp, OpenAI, Gemini
+
 ## Connections
 
 - [[logit-masking]] — the underlying mechanism; this project applies it with a JSON parse state machine as the grammar tracker
 - [[tokenization]] — subword tokenization is why prefix-matching is needed for multi-token identifiers
+- [[outlines-library]] — theoretical foundation (Willard & Louf 2023) is the same paper Outlines is built on

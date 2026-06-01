@@ -39,6 +39,20 @@ For JSON-structured output, the grammar tracker is a lightweight **JSON parse st
 - `expecting_number` — only digit tokens, `-`, `.` are valid
 - `expecting_function_name` — only tokens that are valid prefixes of known function names
 
+Named states for function-calling JSON output:
+
+```
+START               → expect {
+EXPECT_KEY          → expect "name" or "parameters"
+IN_NAME_VALUE       → expect one of the known function names
+EXPECT_COLON        → expect :
+IN_PARAMETERS       → expect { then argument keys
+IN_ARG_KEY          → expect one of the known arg names for chosen function
+IN_ARG_VALUE        → expect value of correct type (string / number / boolean)
+EXPECT_COMMA_OR_END → expect , or }
+DONE
+```
+
 The mask is **position-aware**, not global. The valid token set changes at every generation step depending on current parse state. This simultaneously enforces:
 1. **Syntactic compliance** — valid JSON structure throughout
 2. **Semantic compliance** — function name from known set, argument keys matching definition, types matching schema (number, string, boolean)

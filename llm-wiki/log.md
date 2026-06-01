@@ -22,6 +22,11 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - index.md updated to remove schema entries; note added pointing to .schema/
 - Pages moved: 7
 
+## [2026-06-01] ingest | Call me maybe README (full version — delta update)
+- Added named state machine states to constrained-decoding
+- Added full algorithm steps + key papers section to call-me-maybe source page
+- Pages created: 0 | Pages updated: 2
+
 ## [2026-06-01] ingest | Call me maybe — Function Calling in LLMs (personal project)
 - Source: .raw/2026-06-01-call-me-maybe.md (user's own project; source_type: project)
 - Concepts updated: constrained-decoding (source_count→2, JSON state machine + greedy decoding sections), function-calling (source_count→3, quantified impact + two compliance levels), token-character-mismatch (source_count→3, prefix-matching section)
