@@ -2,7 +2,7 @@
 title: "Context Window"
 type: concept
 tags: [llm, inference, memory, architecture]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -17,6 +17,8 @@ The finite token sequence a model can process in a single forward pass. Everythi
 - **Precious, finite resource**: [[tokenization]] trades character sequence length for token sequence length; context window length limits how much reasoning ([[chain-of-thought]]) can fit
 - **Scales**: GPT-2 (2019) — 1,024 tokens; modern models — 128k–1M+ tokens
 - **System message**: hidden tokens prepended by the provider (identity, persona, instructions) — invisible to user but in context
+- **Approximate text sizes**: 8k tokens ≈ 5–10 pages; 32k ≈ 25–50 pages; 128k ≈ 100–300 pages; 1M ≈ thousands of pages
+- **Effective context**: better [[tokenization]] (fewer tokens per word) → more actual text in same token budget. Context window size stays fixed; readable content increases.
 
 ## Practical implications
 
@@ -30,7 +32,8 @@ The finite token sequence a model can process in a single forward pass. Everythi
 ## Connections
 
 - [[pre-training]] — establishes max context length; trained on windows up to that size
-- [[tokenization]] — context length measured in tokens; BPE trades off sequence length vs vocab size
+- [[tokenization]] — context length measured in tokens; vocab size affects how much text fits per token
+- [[embeddings]] — all tokens in the context window are embedded before entering the Transformer
 - [[chain-of-thought]] — thinking traces occupy context; longer reasoning = more context consumed
 - [[hallucination]] — mitigation: put facts in context rather than relying on parameter recollection
 - [[function-calling]] — tool results (web search, code output) enter context window

@@ -2,7 +2,7 @@
 title: "Tokenization"
 type: concept
 tags: [llm, pre-training, inference, tokens]
-source_count: 2
+source_count: 3
 ---
 
 ## Definition
@@ -16,6 +16,18 @@ The process of converting raw text into a one-dimensional sequence of integer to
 - **Algorithm**: Byte Pair Encoding (BPE) — iteratively merge the most frequent byte pairs into new tokens until target vocab size is reached
 - **Context sensitivity**: capitalization, spacing, and punctuation change token boundaries. "Hello world" ≠ "hello world" ≠ "Hello  world" (two spaces)
 - **Token sequence = the LLM's native format**: everything — text, conversations, tool calls, images — must be tokenized before the model sees it
+
+## Vocabulary size tradeoff
+
+| Larger vocabulary | Smaller vocabulary |
+|---|---|
+| Fewer tokens per text | More tokens per text |
+| Faster inference | Slower inference |
+| More text per context window | Less text per context window |
+| Larger embedding matrix | Smaller embedding matrix |
+| More GPU memory | Less GPU memory |
+
+"unbelievable" = 3 tokens with small vocab, 1 token with large vocab. Both represent the same word; large vocab just does it more efficiently.
 
 ## BPE pipeline
 
@@ -36,7 +48,8 @@ raw text
 ## Connections
 
 - [[pre-training]] — tokenization is the prerequisite; model trains on token sequences
-- [[context-window]] — length measured in tokens, not characters
+- [[embeddings]] — token IDs are the input to the embedding matrix lookup; next step in pipeline
+- [[context-window]] — length measured in tokens, not characters; better tokenization = longer effective context
 - [[token-character-mismatch]] — engineering challenge arising from multi-char tokens in constrained decoding
 - [[constrained-decoding]] — logit masking operates on tokens; must bridge to character-level grammars
 - [[hallucination]] — tokenization doesn't cause hallucination directly, but spelling/counting failures are tokenization artifacts

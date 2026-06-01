@@ -22,6 +22,12 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - index.md updated to remove schema entries; note added pointing to .schema/
 - Pages moved: 7
 
+## [2026-06-01] ingest | LLM Tokenization, Embeddings, and Context Windows (personal notes)
+- Source: .raw/2026-06-01-tokenization-embeddings-context.md (user's own notes; source_type: note)
+- Concepts created: embeddings
+- Concepts updated: tokenization (source_count→3, added vocab tradeoff table), context-window (source_count→2, added effective context + size reference)
+- Pages created: 2 | Pages updated: 4
+
 ## [2026-06-01] ingest | Intro to Large Language Models — Andrej Karpathy
 - Source: .raw/2026-06-01-karpathy-llm-intro.md (video transcript pasted by user)
 - Concepts created: llm-training-pipeline, pre-training, base-model, tokenization, supervised-fine-tuning, reinforcement-learning-llm, rlhf, chain-of-thought, hallucination, context-window

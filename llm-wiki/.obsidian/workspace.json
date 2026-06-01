@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c4485c35910c3ece",
+        "id": "8c2069c14c1ab589",
         "type": "tabs",
         "children": [
           {
-            "id": "646afa6bdc144691",
+            "id": "5588223f3452224a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/rlhf.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "rlhf"
             }
           }
         ]
@@ -176,20 +180,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "646afa6bdc144691",
+  "active": "5588223f3452224a",
   "lastOpenFiles": [
+    "wiki/concepts/chain-of-thought.md",
+    "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
+    "wiki/concepts/tokenization.md",
+    "wiki/sources/2026-06-01-tokenization-embeddings-context.md",
+    "wiki/sources/2026-06-01-karpathy-llm-intro.md",
+    "wiki/sources",
+    "wiki/concepts/embeddings.md",
+    "wiki/concepts/llm-training-pipeline.md",
+    "wiki/entities/andrej-karpathy.md",
     "log.md",
     "index.md",
     "wiki/entities/alphago.md",
     "wiki/entities/deepseek-r1.md",
-    "wiki/entities/andrej-karpathy.md",
-    "wiki/concepts/llm-training-pipeline.md",
     "wiki/concepts/context-window.md",
     "wiki/concepts/hallucination.md",
-    "wiki/concepts/chain-of-thought.md",
     "wiki/concepts/rlhf.md",
     "wiki/concepts/reinforcement-learning-llm.md",
-    "wiki/concepts/tokenization.md",
     "wiki/concepts/base-model.md",
     "wiki/concepts/supervised-fine-tuning.md",
     "wiki/concepts/pre-training.md",
@@ -199,14 +208,9 @@
     "2026-06-01-constrained-decoding-function-calling.md",
     "wiki/concepts/token-character-mismatch.md",
     "wiki/concepts/function-calling.md",
-    "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
     "raw/2026-06-01-constrained-decoding-function-calling.md",
     "wiki/sources/2026-06-01-llm-wiki-idea.md",
-    "wiki/meta/overview.md",
-    "wiki/entities/xgrammar.md",
-    "wiki/entities/vllm.md",
     "wiki/synthesis",
-    "wiki/sources",
     "wiki/meta",
     "wiki/concepts",
     "wiki/entities",

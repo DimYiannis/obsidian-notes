@@ -9,7 +9,7 @@ tags: [llm, constrained-decoding, function-calling, inference, structured-output
 
 ## Summary
 
-Constrained decoding solves the fragile-parsing problem in LLM tool use by enforcing structural validity at the token level: a logit processor masks invalid tokens to −∞ before softmax, so they can never be sampled. Two grammar backends dominate — FSMs ([[outlines-library]]) for simple schemas, CFG/PDA ([[xgrammar]], [[llguidance]]) for recursive structures. [[xgrammar]] is the 2026 default in [[vllm]], SGLang, and TensorRT-LLM at <40 µs/token. [[fantase]] (EMNLP 2024, Amazon) adds a Token Search Trie for API-specific enforcement plus a RoBERTa reranker. Key tradeoff: rigid formats hurt reasoning tasks; production fix is a free-form reasoning field before constrained fields.
+[[constrained-decoding]] solves the fragile-parsing problem in LLM tool use by enforcing structural validity at the token level: a logit processor masks invalid tokens to −∞ before softmax, so they can never be sampled. Two grammar backends dominate — FSMs ([[outlines-library]]) for simple schemas, CFG/PDA ([[xgrammar]], [[llguidance]]) for recursive structures. [[xgrammar]] is the 2026 default in [[vllm]], SGLang, and TensorRT-LLM at <40 µs/token. [[fantase]] (EMNLP 2024, Amazon) adds a Token Search Trie for API-specific enforcement plus a RoBERTa reranker. Key tradeoff: rigid formats hurt reasoning tasks; production fix is a free-form reasoning field before constrained fields.
 
 ## Key Points
 
@@ -35,11 +35,6 @@ Constrained decoding solves the fragile-parsing problem in LLM tool use by enfor
 - [[logit-masking]] — mechanism: set invalid token logits to −∞ before softmax
 - [[function-calling]] — the primary application domain
 - [[token-character-mismatch]] — engineering challenge bridging char-level grammars and multi-char tokens
-
-## Connections
-
-- Orthogonal to [[rag]]: RAG governs what knowledge the model draws on; constrained decoding governs output structure. Can be combined.
-- Connects to [[llm-wiki-pattern]] indirectly: structured output from LLMs enables more reliable wiki maintenance (e.g. enforcing frontmatter schema).
 
 ## Quotes
 

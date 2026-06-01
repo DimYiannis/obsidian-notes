@@ -116,7 +116,7 @@ Trigger: human drops file in `.raw/` or pastes content and says "ingest [source]
 
 1. Read the source fully.
 2. Briefly discuss key takeaways (3–5 bullets). Ask if the human wants to emphasize anything before writing.
-3. Write `.sources/YYYY-MM-DD-slug.md`.
+3. Write `wiki/sources/YYYY-MM-DD-slug.md`.
 4. For each significant entity: create or update `wiki/entities/name.md`. Increment `source_count`.
 5. For each significant concept: create or update `wiki/concepts/name.md`. Increment `source_count`.
 6. Update `index.md` — add source entry; add or update entity/concept entries.
@@ -216,15 +216,15 @@ The Obsidian graph shows only the **essence of ingested sources**: concept pages
 | `wiki/synthesis/` | ✓ | Filed analyses and query answers |
 | `wiki/meta/` | ✓ | MOC pages (optional, for topic clusters) |
 | `notes/` | ✓ | Human-written notes — visible in graph |
-| `.sources/` | ✗ | Source summary pages — intake layer, not knowledge |
+| `wiki/sources/` | ✓ (isolated) | Source summary pages — visible but no wikilinks, appear as disconnected nodes |
 | `.schema/` | ✗ | Wiki methodology and structure pages |
 | `.raw/` | ✗ | Immutable raw source documents |
 
-**Rule**: source pages go in `.sources/YYYY-MM-DD-slug.md`. They are the conduit; concept and entity pages are the knowledge. Cross-links between concept/entity pages keep the graph connected without source pages being visible.
+**Rule**: source pages go in `wiki/sources/YYYY-MM-DD-slug.md`. They are visible in the Obsidian graph and fully connected via wikilinks to concept and entity pages — they act as the entry-point nodes that link out to the knowledge cluster.
 
 **Rule**: never use `[[wikilinks]]` in `index.md` or `log.md` — these are operational files; wikilinks would pull them into the Obsidian graph as connected nodes. Use plain text filenames only.
 
-**Rule**: never use `[[wikilinks]]` to source pages inside `wiki/` pages. Obsidian can't resolve links into dot-folders and creates empty stray files at vault root. In `## Appearances` sections, cite sources as plain text: `Source Title (YYYY-MM-DD)`.
+**Rule**: in `## Appearances` sections of entity/concept pages, cite sources as plain text: `Source Title (YYYY-MM-DD)`. Do not wikilink to source pages.
 
 ---
 
@@ -237,3 +237,4 @@ The Obsidian graph shows only the **essence of ingested sources**: concept pages
 5. **Ask before filing a synthesis page** — don't auto-file without human confirmation.
 6. **Read `CLAUDE.md` at session start** before any operation.
 7. **Step 2 of ingest is mandatory** — always discuss takeaways before writing. Don't skip to writing.
+8. **Write normally during ingest** — do not use compressed/caveman communication style when executing any ingest step (takeaway discussion, page writing, reports). Resume user's preferred style after ingest completes.

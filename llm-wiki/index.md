@@ -7,10 +7,11 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 
 ---
 
-## Sources (in `.sources/` — hidden from graph)
+## Sources (in `wiki/sources/` — visible in graph, linked to concepts/entities)
 
 - 2026-06-01-constrained-decoding-function-calling — constrained decoding for LLM function calling; logit masking, FSM vs CFG/PDA, XGrammar, FANTASE
 - 2026-06-01-karpathy-llm-intro — Andrej Karpathy's full LLM training pipeline walkthrough; pre-training, SFT, RL, hallucinations, sharp edges
+- 2026-06-01-tokenization-embeddings-context — personal notes on tokens, embeddings, vocabulary tradeoff, effective context window
 
 ---
 
@@ -33,13 +34,14 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - llm-training-pipeline — three-stage overview: pre-training → SFT → RL (source_count: 1)
 - pre-training — stage 1: internet text → base model via next-token prediction (source_count: 1)
 - base-model — output of pre-training; internet token autocomplete; not yet an assistant (source_count: 1)
-- tokenization — text → token IDs via BPE; multi-char tokens cause spelling/counting failures (source_count: 2)
+- tokenization — text → token IDs via BPE; vocab size tradeoff; multi-char tokens cause spelling/counting failures (source_count: 3)
+- embeddings — token IDs → dense vectors via embedding matrix (vocab_size × dim); semantic similarity in vector space (source_count: 1)
 - supervised-fine-tuning — stage 2: human labeler conversations → assistant (source_count: 1)
 - reinforcement-learning-llm — stage 3 (verifiable): trial-and-error → emergent reasoning; real magic (source_count: 1)
 - rlhf — stage 3 (unverifiable): reward model simulates human preferences; gameable; limited (source_count: 1)
 - chain-of-thought — emergent reasoning strategy from RL; backtracking, self-checking, multi-perspective (source_count: 1)
 - hallucination — LLM fabrication; causes (SFT distribution) and mitigations (self-knowledge + tools) (source_count: 1)
-- context-window — working memory; directly accessible vs parameter recollection (source_count: 1)
+- context-window — working memory; measured in tokens; effective context scales with tokenization quality (source_count: 2)
 
 ### LLM Inference / Structured Output
 - constrained-decoding — inference-time structural guarantee via logit masking; FSM or CFG/PDA grammar tracking (source_count: 1)
