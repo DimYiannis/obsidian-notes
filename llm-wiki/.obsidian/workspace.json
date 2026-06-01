@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b3d53cd5c917e3c",
+        "id": "c4485c35910c3ece",
         "type": "tabs",
         "children": [
           {
-            "id": "21fa1cb122a65b7d",
+            "id": "646afa6bdc144691",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "21fa1cb122a65b7d",
+  "active": "646afa6bdc144691",
   "lastOpenFiles": [
+    "log.md",
+    "index.md",
     "wiki/entities/alphago.md",
     "wiki/entities/deepseek-r1.md",
     "wiki/entities/andrej-karpathy.md",
@@ -203,8 +205,6 @@
     "wiki/meta/overview.md",
     "wiki/entities/xgrammar.md",
     "wiki/entities/vllm.md",
-    "wiki/entities/vannevar-bush.md",
-    "wiki/entities/outlines-library.md",
     "wiki/synthesis",
     "wiki/sources",
     "wiki/meta",

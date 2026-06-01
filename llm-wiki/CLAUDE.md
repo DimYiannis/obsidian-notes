@@ -222,6 +222,8 @@ The Obsidian graph shows only the **essence of ingested sources**: concept pages
 
 **Rule**: source pages go in `.sources/YYYY-MM-DD-slug.md`. They are the conduit; concept and entity pages are the knowledge. Cross-links between concept/entity pages keep the graph connected without source pages being visible.
 
+**Rule**: never use `[[wikilinks]]` in `index.md` or `log.md` — these are operational files; wikilinks would pull them into the Obsidian graph as connected nodes. Use plain text filenames only.
+
 **Rule**: never use `[[wikilinks]]` to source pages inside `wiki/` pages. Obsidian can't resolve links into dot-folders and creates empty stray files at vault root. In `## Appearances` sections, cite sources as plain text: `Source Title (YYYY-MM-DD)`.
 
 ---
