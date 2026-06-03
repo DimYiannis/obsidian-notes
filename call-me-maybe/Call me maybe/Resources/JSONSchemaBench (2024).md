@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Generating Structured Outputs from LLMs: Benchmark and Studies
 **Geng et al. (2024)** — EPFL, Microsoft · [arxiv.org/html/2501.10868v1](https://arxiv.org/html/2501.10868v1)
 

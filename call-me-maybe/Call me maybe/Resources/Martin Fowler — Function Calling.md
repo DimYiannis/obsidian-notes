@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Function Calling Using LLMs — Martin Fowler
 [martinfowler.com/articles/function-call-LLM.html](https://www.martinfowler.com/articles/function-call-LLM.html)
 

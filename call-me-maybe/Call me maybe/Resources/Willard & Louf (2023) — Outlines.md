@@ -1,5 +1,7 @@
+← [[00 Reading Guide]]
+
 # Efficient Guided Generation for Large Language Models
-**Willard & Louf (2023)** · [arxiv.org/abs/2307.09702](https://arxiv.org/abs/2307.09702)
+**Willard & Louf (Willard & Louf (2023) — Outlines2023)** · [arxiv.org/abs/2307.09702](https://arxiv.org/abs/2307.09702)
 
 **Theoretical foundation of this project.**
 
@@ -23,3 +25,7 @@ The Outlines library is the direct implementation of this theory. The vocabulary
 ## Complexity insight
 
 Prior approaches (e.g. Guidance) matched from sequence start and scanned the full vocabulary at every step — O(N) per token. Outlines amortizes all computation to preprocessing → O(1) at inference.
+
+## Connection
+
+→ [[Xe Iaso — Function Calling Talk]]: Xe Iaso explains *what* function calling is and why the model never executes anything. Willard & Louf explains *how* to guarantee the output is always valid JSON. The two are the "what" and the "how" of the same system.

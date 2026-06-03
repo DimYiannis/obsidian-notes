@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Thinking Before Constraining: A Unified Decoding Framework
 **Nguyen et al. (2025)** · [arxiv.org/pdf/2601.07525](https://arxiv.org/pdf/2601.07525)
 

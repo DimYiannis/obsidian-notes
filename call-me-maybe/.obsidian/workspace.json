@@ -18,87 +18,17 @@
             }
           },
           {
-            "id": "79fdbd3c3661e1ca",
+            "id": "dac7053eed2b47cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Call me maybe/2. build a text that give the LLM context.md",
+                "file": "Call me maybe/Resources/00 Reading Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. build a text that give the LLM context"
-            }
-          },
-          {
-            "id": "123d921a04b4f4f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Call me maybe/3. Encode.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3. Encode"
-            }
-          },
-          {
-            "id": "1e515dfb741f6873",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Call me maybe/4. LLM generates response token by token.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4. LLM generates response token by token"
-            }
-          },
-          {
-            "id": "883747d983f35321",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Call me maybe/5. constrained decoding.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5. constrained decoding"
-            }
-          },
-          {
-            "id": "bd9746201c682564",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Call me maybe/6. generate function name.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6. generate function name"
-            }
-          },
-          {
-            "id": "8236f834d61f09f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Call me maybe/7. Arguments.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7. Arguments"
+              "title": "00 Reading Guide"
             }
           }
         ]
@@ -265,22 +195,22 @@
   },
   "active": "e4e78c890823e4d4",
   "lastOpenFiles": [
+    "Call me maybe/Resources/00 Reading Guide.md",
+    "Call me maybe/Resources/Xe Iaso — Function Calling Talk.md",
+    "Call me maybe/Resources/Willard & Louf (2023) — Outlines.md",
+    "Call me maybe/Resources/Beyond Free-Form Text — Constrained Decoding Survey.md",
+    "Call me maybe/1. Read  prompt.md",
+    "Call me maybe/0. Overview.md",
     "Call me maybe/Call me maybe workflow.canvas",
     "Call me maybe/Resources/Karpathy — GPT Tokenizer.md",
     "Call me maybe/Resources/Sean Trott — Tokenization Explained.md",
-    "Call me maybe/Resources/Beyond Free-Form Text — Constrained Decoding Survey.md",
-    "Call me maybe/Resources/Xe Iaso — Function Calling Talk.md",
     "Call me maybe/Resources/Martin Fowler — Function Calling.md",
     "Call me maybe/Resources/Draft-Conditioned Constrained Decoding (2025).md",
     "Call me maybe/Resources/Thinking Before Constraining (2025).md",
     "Call me maybe/Resources/Thinking Before Constraining (2025).md.tmp.48189.3660a238a6fe",
-    "Call me maybe/Resources/00 Reading Guide.md",
     "Call me maybe/Resources/JSONSchemaBench (2024).md",
-    "Call me maybe/Resources/Willard & Louf (2023) — Outlines.md",
     "Call me maybe/Resources",
     "Call me maybe/README.md",
-    "Call me maybe/0. Overview.md",
-    "Call me maybe/1. Read  prompt.md",
     "Call me maybe/5. constrained decoding.md",
     "Call me maybe/3. Encode.md",
     "Call me maybe/4. LLM generates response token by token.md",

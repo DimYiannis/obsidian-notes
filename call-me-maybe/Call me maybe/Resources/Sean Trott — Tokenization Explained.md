@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Tokenization in Large Language Models, Explained — Sean Trott
 [seantrott.substack.com/p/tokenization-in-large-language-models](https://seantrott.substack.com/p/tokenization-in-large-language-models)
 

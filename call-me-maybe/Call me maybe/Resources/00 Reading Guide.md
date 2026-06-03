@@ -4,7 +4,7 @@
 
 ### Core — read these first
 
-- **Efficient Guided Generation for Large Language Models** — Willard & Louf (2023)
+- **Efficient Guided Generation for Large Language Models** — Willard & Louf (2023) → [[Willard & Louf (2023) — Outlines]]
   [https://arxiv.org/abs/2307.09702](https://arxiv.org/abs/2307.09702)
   The theoretical foundation of this project. Shows how token generation can be modelled as FSM transitions, leading to an efficient approach to constrained decoding using a vocabulary index.
 
@@ -15,15 +15,15 @@
 
 ### Supplementary
 
-- **Draft-Conditioned Constrained Decoding (DCCD)** (2025)
+- **Draft-Conditioned Constrained Decoding (DCCD)** (2025) → [[Draft-Conditioned Constrained Decoding (2025)]]
   [https://arxiv.org/pdf/2603.03305](https://arxiv.org/pdf/2603.03305)
   Shows how constrained decoding guarantees that every emitted token preserves global validity. Good for understanding why masking to `-inf` works.
 
-- **JSONSchemaBench — Generating Structured Outputs from Language Models** (2024)
+- **JSONSchemaBench — Generating Structured Outputs from Language Models** (2024) → [[JSONSchemaBench (2024)]]
   [https://arxiv.org/html/2501.10868v1](https://arxiv.org/html/2501.10868v1)
   Benchmarks six constrained decoding frameworks (Guidance, Outlines, Llamacpp, XGrammar, OpenAI, Gemini) on real-world JSON schemas. Useful for the performance analysis section.
 
-- **Thinking Before Constraining: A Unified Decoding Framework** (2025)
+- **Thinking Before Constraining: A Unified Decoding Framework** (2025) → [[Thinking Before Constraining (2025)]]
   [https://arxiv.org/pdf/2601.07525](https://arxiv.org/pdf/2601.07525)
   Discusses the limitations of unconstrained LLMs for structured output and the role of grammar engines like Outlines and XGrammar.
 
@@ -41,7 +41,7 @@
   [https://www.youtube.com/watch?v=APnKbi448O4](https://www.youtube.com/watch?v=APnKbi448O4)
   Visual and clear. Essential before working on `vocabulary.py`.
 
-- **Let's Build the GPT Tokenizer — Andrej Karpathy**
+- **Let's Build the GPT Tokenizer — Andrej Karpathy** → [[Karpathy — GPT Tokenizer]]
   [https://www.fast.ai/posts/2025-10-16-karpathy-tokenizers.html](https://www.fast.ai/posts/2025-10-16-karpathy-tokenizers.html)
   Builds a BPE tokenizer from scratch. Longer but the gold standard for understanding how tokens and vocabulary files actually work.
 
@@ -57,11 +57,11 @@
 
 ### Function Calling
 
-- **Function calling using LLMs — Martin Fowler**
+- **Function calling using LLMs — Martin Fowler** → [[Martin Fowler — Function Calling]]
   [https://www.martinfowler.com/articles/function-call-LLM.html](https://www.martinfowler.com/articles/function-call-LLM.html)
   Well written, practical. Explains that the LLM never executes the function — it just outputs a structured description of the call.
 
-- **Function calling in LLMs — Xe Iaso (talk transcript)**
+- **Function calling in LLMs — Xe Iaso (talk transcript)** → [[Xe Iaso — Function Calling Talk]]
   [https://xeiaso.net/talks/2024/llm-function-calling/](https://xeiaso.net/talks/2024/llm-function-calling/)
   Short and punchy. Clears up the most common misconception: the model isn't calling anything itself.
 
@@ -75,7 +75,7 @@
 
 ### Constrained Decoding
 
-- **Beyond Free-Form Text: How Constrained Decoding is Reshaping Structured Generation**
+- **Beyond Free-Form Text: How Constrained Decoding is Reshaping Structured Generation** → [[Beyond Free-Form Text — Constrained Decoding Survey]]
   [https://medium.com/@brijeshrn/beyond-free-form-text-how-constrained-decoding-is-reshaping-structured-generation-in-llms-5f7a38bef259](https://medium.com/@brijeshrn/beyond-free-form-text-how-constrained-decoding-is-reshaping-structured-generation-in-llms-5f7a38bef259)
   Good survey of the landscape: DOMINO, Outlines, XGrammar, Guidance. Explains the subword alignment problem well.
 
@@ -89,7 +89,7 @@
   [https://machinelearningplus.com/gen-ai/build-bpe-tokenizer/](https://machinelearningplus.com/gen-ai/build-bpe-tokenizer/)
   Hands-on with interactive code. Useful for understanding why the same string can map to different token IDs depending on context.
 
-- **Tokenization in large language models, explained**
+- **Tokenization in large language models, explained** → [[Sean Trott — Tokenization Explained]]
   [https://seantrott.substack.com/p/tokenization-in-large-language-models](https://seantrott.substack.com/p/tokenization-in-large-language-models)
   Accessible explanation of BPE and why subword splits matter.
 

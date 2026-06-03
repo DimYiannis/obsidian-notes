@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Let's Build the GPT Tokenizer — Andrej Karpathy
 [fast.ai/posts/2025-10-16-karpathy-tokenizers.html](https://www.fast.ai/posts/2025-10-16-karpathy-tokenizers.html)
 

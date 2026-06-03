@@ -1,3 +1,5 @@
+← [[00 Reading Guide]]
+
 # Draft-Conditioned Constrained Decoding (DCCD)
 **Reddy et al. (2025)** · [arxiv.org/pdf/2603.03305](https://arxiv.org/pdf/2603.03305) · [GitHub](https://github.com/avinashreddydev/dccd)
 
