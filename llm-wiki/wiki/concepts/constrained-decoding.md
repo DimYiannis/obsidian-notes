@@ -2,12 +2,14 @@
 title: "Constrained Decoding"
 type: concept
 tags: [llm, inference, structured-output, function-calling]
-source_count: 2
+source_count: 4
 ---
 
 ## Definition
 
 Inference-time technique that guarantees structurally valid LLM output by inserting a logit processor between the model's raw output distribution and the sampling step. The processor tracks position in a target grammar and applies [[logit-masking]] — invalid tokens set to −∞, zero probability after softmax, never sampled. No model weight changes required; works as an output-side wrapper around any autoregressive LLM.
+
+Two variants exist — this page covers **standard constrained decoding** (single-pass, constraints from token 1). See [[draft-conditioned-decoding]] for the two-pass variant that separates semantic planning from structural enforcement.
 
 ## Key Properties
 
@@ -59,6 +61,17 @@ The mask is **position-aware**, not global. The valid token set changes at every
 
 Empirical result: unconstrained 0.6B model (Qwen3-0.6B) → ~30% valid JSON. Same model with JSON state machine constrained decoding → **100%** schema-compliant output. Reliability from structural guidance, not model size.
 
+## Fine-tuning vs. decode-time enforcement
+
+Zhang et al. (2023) — *Don't Fine-Tune, Decode* — make the empirical case:
+
+- Fine-tuning teaches syntax **implicitly** → models still produce frequent errors
+- Decode-time constraints enforce syntax **explicitly** → zero syntax errors
+
+**TOOLDEC**: FSM-based constrained decoding for tool/function call syntax. Applied to Mistral-Instruct: tool use accuracy **0% → 52%**. Outperforms specialized fine-tuned models with no training required.
+
+Implication: structural reliability is a **decoding problem**, not a training problem. Enforcement timing determines reliability — not model size or training budget.
+
 ## Greedy decoding under constraint
 
 When invalid tokens are already masked to −∞, temperature/sampling adds noise without benefit — it can only cause the model to pick a suboptimal token from the remaining valid set. **Greedy decoding is the optimal sampling strategy for constrained structured output.**
@@ -89,6 +102,7 @@ Free-form field first → model thinks before committing to structure. Source: "
 ## Connections
 
 - [[logit-masking]] — the core mechanism inside constrained decoding
+- [[draft-conditioned-decoding]] — the two-pass variant; solves the projection tax problem of standard constrained decoding
 - [[function-calling]] — primary application
 - [[token-character-mismatch]] — engineering challenge in implementation
 - [[rag]] — orthogonal technique; RAG governs knowledge retrieval, constrained decoding governs output structure; can combine

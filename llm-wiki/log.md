@@ -22,6 +22,17 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - index.md updated to remove schema entries; note added pointing to .schema/
 - Pages moved: 7
 
+## [2026-06-08] ingest | Draft-Conditioned Constrained Decoding (Reddy et al., 2025)
+- Source: .raw/2026-06-08-dccd.md (arxiv.org/abs/2603.03305; source_type: paper)
+- Concepts created: draft-conditioned-decoding
+- Concepts updated: constrained-decoding (source_count→4, added variant reference + link to DCCD)
+- Pages created: 3 | Pages updated: 3
+
+## [2026-06-08] ingest | Don't Fine-Tune, Decode (Zhang et al., 2023)
+- Source: .raw/2026-06-08-dont-fine-tune-decode.md (arxiv.org/abs/2310.07075; source_type: paper)
+- Concepts updated: constrained-decoding (source_count→3, added fine-tuning vs decode-time section + TOOLDEC), function-calling (source_count→4, added 0%→52% result)
+- Pages created: 2 | Pages updated: 4
+
 ## [2026-06-01] ingest | Call me maybe README (full version — delta update)
 - Added named state machine states to constrained-decoding
 - Added full algorithm steps + key papers section to call-me-maybe source page

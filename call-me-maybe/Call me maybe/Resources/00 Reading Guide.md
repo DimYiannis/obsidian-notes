@@ -8,10 +8,9 @@
   [https://arxiv.org/abs/2307.09702](https://arxiv.org/abs/2307.09702)
   The theoretical foundation of this project. Shows how token generation can be modelled as FSM transitions, leading to an efficient approach to constrained decoding using a vocabulary index.
 
-- **Don't Fine-Tune, Decode: Syntax Error-Free Tool Use via Constrained Decoding** (2023)
-  [https://arxiv.org/abs/2310.07820](https://arxiv.org/abs/2310.07820)
-  ⚠️ Note: this URL leads to a time series forecasting paper. Search for the correct paper by title.
-  Directly about function calling + constrained decoding. Argues for decoding-time constraints over fine-tuning for reliable structured tool use.
+- **Don't Fine-Tune, Decode: Syntax Error-Free Tool Use via Constrained Decoding** (2023) → [[Don't Fine-Tune, Decode (2023)]]
+  [https://arxiv.org/abs/2310.07075](https://arxiv.org/abs/2310.07075)
+  Directly about function calling + constrained decoding. Argues for decoding-time constraints over fine-tuning. Mistral-Instruct: 0% → 52% tool use accuracy with constrained decoding.
 
 ### Supplementary
 
@@ -116,6 +115,6 @@
 | 2 | Tokenization video (BPE) | Understand tokens before touching vocabulary.py |
 | 3 | Willard & Louf paper | Core theory behind your state machine |
 | 4 | Outlines Medium explainer | Easier digest of the same paper |
-| 5 | Don't Fine-Tune, Decode | Directly about function calling + constrained decoding |
+| 5 | [[Don't Fine-Tune, Decode (2023)]] | Directly about function calling + constrained decoding |
 | 6 | Draft-Conditioned paper | Production context, why masking works |
 | 7 | JSONSchemaBench | For the README performance analysis section |

@@ -2,7 +2,7 @@
 title: "Function Calling"
 type: concept
 tags: [llm, tool-use, api, structured-output]
-source_count: 3
+source_count: 4
 ---
 
 ## Definition
@@ -40,6 +40,7 @@ Function selection accuracy (~90%+) remains model-dependent — the constraint g
 - OpenAI function calling API: model generates JSON tool call, application executes it
 - [[fantase]] (EMNLP 2024): Token Search Trie makes hallucinating function names/enum values structurally impossible
 - "Call me maybe" project: Qwen3-0.6B + JSON state machine constrained decoding → 100% schema-compliant function calls
+- TOOLDEC (Zhang et al., 2023): Mistral-Instruct tool use accuracy **0% → 52%** with FSM constrained decoding; zero syntax errors; outperforms fine-tuned models
 - Any agentic pipeline where LLM decides which tool to call and with what arguments
 
 ## Connections
