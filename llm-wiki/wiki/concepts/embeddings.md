@@ -2,7 +2,7 @@
 title: "Embeddings"
 type: concept
 tags: [llm, representation, neural-networks, tokenization]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -46,6 +46,8 @@ Next Token Prediction
 - [[tokenization]] — produces token IDs; embeddings are the next step
 - [[pre-training]] — embedding matrix is learned during pre-training
 - [[context-window]] — all tokens in the context window are embedded before entering the Transformer
+- [[transformer-architecture]] — embeddings (plus positional encodings) are its input representation
+- [[self-attention]] — operates on embeddings to build contextual representations
 - [[constrained-decoding]] — operates on logits (output of Transformer), not embeddings directly, but both live in the same pipeline
 
 ## Open Questions

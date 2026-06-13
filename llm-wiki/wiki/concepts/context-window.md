@@ -2,7 +2,7 @@
 title: "Context Window"
 type: concept
 tags: [llm, inference, memory, architecture]
-source_count: 2
+source_count: 3
 ---
 
 ## Definition
@@ -31,6 +31,8 @@ The finite token sequence a model can process in a single forward pass. Everythi
 
 ## Connections
 
+- [[self-attention]] — full attention over the context is quadratic in length; this cost is the core reason context windows are a constrained resource
+- [[transformer-architecture]] — the architecture whose forward pass consumes the whole context window at once
 - [[pre-training]] — establishes max context length; trained on windows up to that size
 - [[tokenization]] — context length measured in tokens; vocab size affects how much text fits per token
 - [[embeddings]] — all tokens in the context window are embedded before entering the Transformer

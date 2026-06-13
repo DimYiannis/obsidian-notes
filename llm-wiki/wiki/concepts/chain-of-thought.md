@@ -2,7 +2,7 @@
 title: "Chain-of-Thought"
 type: concept
 tags: [llm, reasoning, reinforcement-learning, inference]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -33,6 +33,7 @@ From DeepSeek R1:
 - [[deepseek-r1]] — paper demonstrating and analyzing emergent chain-of-thought from RL
 - [[hallucination]] — chain-of-thought reduces hallucination in reasoning tasks by distributing work; model can self-correct mid-sequence
 - [[context-window]] — chain-of-thought occupies context window; longer thinking = more tokens consumed
+- [[induction-heads]] — an in-context-learning mechanism; prompt-based reasoning behaviors build on the same substrate
 
 ## Open Questions
 

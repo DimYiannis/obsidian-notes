@@ -11,10 +11,14 @@
             "id": "5588223f3452224a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/2026-06-13-transformer-circuits-framework.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-13-transformer-circuits-framework"
             }
           }
         ]
@@ -178,6 +182,20 @@
   },
   "active": "5588223f3452224a",
   "lastOpenFiles": [
+    "wiki/sources/2026-06-13-attention-is-all-you-need.md",
+    "wiki/sources/2026-06-13-transformer-circuits-framework.md",
+    "wiki/concepts/context-window.md.tmp.67136.49a7a2d73f8b",
+    "wiki/entities/google-brain.md",
+    "wiki/entities/anthropic.md",
+    "wiki/concepts/mechanistic-interpretability.md",
+    "wiki/concepts/induction-heads.md",
+    "wiki/concepts/residual-stream.md",
+    "wiki/concepts/feed-forward-network.md",
+    "wiki/concepts/query-key-value.md",
+    "wiki/concepts/draft-conditioned-decoding.md",
+    "wiki/sources/2026-06-08-dccd.md",
+    "wiki/sources/2026-06-08-dccd.md.tmp.48189.cfd78849030f",
+    "wiki/sources/2026-06-08-dont-fine-tune-decode.md",
     "wiki/sources/2026-06-01-call-me-maybe.md",
     "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
     "wiki/entities/alphago.md",
@@ -193,25 +211,12 @@
     "log.md",
     "index.md",
     "wiki/entities/deepseek-r1.md",
-    "wiki/concepts/context-window.md",
-    "wiki/concepts/hallucination.md",
-    "wiki/concepts/reinforcement-learning-llm.md",
-    "wiki/concepts/base-model.md",
-    "wiki/concepts/supervised-fine-tuning.md",
-    "wiki/concepts/pre-training.md",
-    "wiki/concepts/constrained-decoding.md",
-    "notes/Untitled.md",
     "notes",
-    "2026-06-01-constrained-decoding-function-calling.md",
-    "wiki/concepts/token-character-mismatch.md",
-    "wiki/concepts/function-calling.md",
-    "raw/2026-06-01-constrained-decoding-function-calling.md",
     "wiki/synthesis",
     "wiki/meta",
     "wiki/concepts",
     "wiki/entities",
     "wiki",
-    "raw/assets",
-    "raw"
+    "raw/assets"
   ]
 }

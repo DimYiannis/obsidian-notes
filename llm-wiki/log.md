@@ -70,3 +70,20 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - Source page created: wiki/sources/2026-06-01-llm-wiki-idea.md
 - Meta page created: wiki/meta/overview.md
 - Pages created: 7 | Pages updated: 0
+
+## [2026-06-13] ingest | Attention Is All You Need (Vaswani et al., 2017)
+- Source: arxiv.org/abs/1706.03762 (source_type: paper; fetched via web)
+- Source page created: wiki/sources/2026-06-13-attention-is-all-you-need.md
+- Concepts created: transformer-architecture, self-attention, multi-head-attention, query-key-value, feed-forward-network
+- Entities created: google-brain
+- Concepts updated: embeddings (source_count→2), context-window (source_count→3) — added transformer/attention cross-links
+- Pages created: 7 | Pages updated: 2
+
+## [2026-06-13] ingest | A Mathematical Framework for Transformer Circuits (Elhage et al., 2021)
+- Source: transformer-circuits.pub/2021/framework (source_type: paper; fetched via web)
+- Source page created: wiki/sources/2026-06-13-transformer-circuits-framework.md
+- Concepts created: mechanistic-interpretability, residual-stream, induction-heads
+- Entities created: anthropic
+- Concepts updated: self-attention (source_count→2), multi-head-attention (source_count→2), feed-forward-network (source_count→2), chain-of-thought (source_count→2)
+- Note: flagged ⚠️-style caveat on feed-forward-network — paper studies attention-only models, does NOT establish the "MLP processes" claim from user's transformer explainer
+- Pages created: 4 | Pages updated: 4
