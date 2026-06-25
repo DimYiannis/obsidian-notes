@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/2026-06-13-transformer-circuits-framework.md",
+                "file": "wiki/concepts/constrained-decoding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-13-transformer-circuits-framework"
+              "title": "constrained-decoding"
             }
           }
         ]
@@ -182,10 +182,12 @@
   },
   "active": "5588223f3452224a",
   "lastOpenFiles": [
-    "wiki/sources/2026-06-13-attention-is-all-you-need.md",
-    "wiki/sources/2026-06-13-transformer-circuits-framework.md",
-    "wiki/concepts/context-window.md.tmp.67136.49a7a2d73f8b",
+    "wiki/concepts/llm-training-pipeline.md",
+    "wiki/concepts/multi-head-attention.md",
     "wiki/entities/google-brain.md",
+    "wiki/sources/2026-06-13-transformer-circuits-framework.md",
+    "wiki/sources/2026-06-13-attention-is-all-you-need.md",
+    "wiki/concepts/context-window.md.tmp.67136.49a7a2d73f8b",
     "wiki/entities/anthropic.md",
     "wiki/concepts/mechanistic-interpretability.md",
     "wiki/concepts/induction-heads.md",
@@ -206,11 +208,9 @@
     "wiki/sources/2026-06-01-karpathy-llm-intro.md",
     "wiki/sources",
     "wiki/concepts/embeddings.md",
-    "wiki/concepts/llm-training-pipeline.md",
     "wiki/entities/andrej-karpathy.md",
     "log.md",
     "index.md",
-    "wiki/entities/deepseek-r1.md",
     "notes",
     "wiki/synthesis",
     "wiki/meta",

@@ -11,6 +11,8 @@
 - [[routing]] — gateways, routes, default route `0.0.0.0/0`
 - [[network-layers]] — OSI 7-layer & TCP/IP model, switch vs router
 - [[cheat-sheet]] — one-page study card for the defense
+- [[general-theory.canvas|General theory — the essence (canvas)]] — the 11 core terms + the thread tying them
+- [[ip-address-theory.canvas|IP theory — vocabulary (canvas)]] — every term: bit, octet, mask, CIDR, NAT, DNS, port…
 - [[netpractice-basics.canvas|Basics — start here (canvas)]] — what is a subnet/router/gateway, in plain words
 - [[netpractice-schema.canvas|Visual schema (canvas)]] — topology + decision flow + formula cards
 

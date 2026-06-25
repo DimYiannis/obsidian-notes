@@ -29,9 +29,9 @@
               "state": {
                 "file": "Call me maybe/Call me maybe workflow.canvas",
                 "viewState": {
-                  "x": 1201.3198595466404,
-                  "y": -109.8451641036755,
-                  "zoom": -0.2088979423970045
+                  "x": 280,
+                  "y": -470,
+                  "zoom": -1.2293311021655862
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -245,9 +245,12 @@
   },
   "active": "d1b04580029b72ab",
   "lastOpenFiles": [
-    "Call me maybe/0. Overview.md",
-    "Call me maybe/Resources/00 Reading Guide.md",
+    "Call me maybe/Resources/Willard & Louf (2023) — Outlines.md",
     "Call me maybe/Resources/Karpathy — GPT Tokenizer.md",
+    "Call me maybe/Call me maybe workflow.canvas",
+    "Call me maybe/Resources/00 Reading Guide.md",
+    "Call me maybe/Resources/Thinking Before Constraining (2025).md",
+    "Call me maybe/0. Overview.md",
     "Call me maybe/7. Arguments.md",
     "Call me maybe/6. generate function name.md",
     "Call me maybe/5. constrained decoding.md",
@@ -259,10 +262,7 @@
     "Call me maybe/Resources/Draft-Conditioned Constrained Decoding (2025).md",
     "Call me maybe/Resources/JSONSchemaBench (2024).md",
     "Call me maybe/Resources/Beyond Free-Form Text — Constrained Decoding Survey.md",
-    "Call me maybe/Call me maybe workflow.canvas",
     "Call me maybe/Resources/Martin Fowler — Function Calling.md",
-    "Call me maybe/Resources/Willard & Louf (2023) — Outlines.md",
-    "Call me maybe/Resources/Thinking Before Constraining (2025).md",
     "Call me maybe/Resources/00 Reading Guide.md.tmp.48189.4335017d5343",
     "Call me maybe/Resources/Xe Iaso — Function Calling Talk.md",
     "Call me maybe/Resources/Sean Trott — Tokenization Explained.md",

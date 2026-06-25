@@ -1,0 +1,41 @@
+{
+	"nodes": [
+		{"id":"title","type":"text","x":-700,"y":-820,"width":1000,"height":120,"color":"6","text":"# General Theory — Stripped All The Way Down\nThe terms and what each one actually means. This is the essence to grasp, remember, and be able to tell.\n**Read the cards, then the thread at the bottom that ties them together.**"},
+
+		{"id":"g-address","type":"group","x":-720,"y":-660,"width":1040,"height":380,"color":"4","label":"1 · Addressing — an IP + a mask defines a subnet"},
+
+		{"id":"ip","type":"text","x":-700,"y":-590,"width":320,"height":170,"color":"4","text":"### IP address\nA **32-bit number** that identifies a device on a network, written as four octets (e.g. `192.168.1.130`).\nSplit into a **network part** and a **host part**."},
+		{"id":"subnet","type":"text","x":-350,"y":-590,"width":320,"height":170,"color":"4","text":"### Subnet\nA group of addresses that share the same **network part**.\nDevices in the **same subnet talk directly**; devices in **different subnets need a router**."},
+		{"id":"mask","type":"text","x":0,"y":-590,"width":300,"height":170,"color":"4","text":"### Subnet mask\nDecides **where the network part ends and the host part begins**.\nWritten as `255.255.255.0` or in CIDR as `/24`.\nMore network bits = smaller subnet = fewer hosts."},
+
+		{"id":"netaddr","type":"text","x":-525,"y":-385,"width":300,"height":90,"color":"4","text":"### Network address\nThe **first** address in a subnet — the subnet's \"name.\" **Can't be assigned to a device.**"},
+		{"id":"bcast","type":"text","x":-195,"y":-385,"width":300,"height":90,"color":"4","text":"### Broadcast address\nThe **last** address in a subnet. **Also can't be assigned to a device.**"},
+
+		{"id":"g-devices","type":"group","x":-720,"y":-240,"width":1040,"height":280,"color":"5","label":"2 · Devices — switch within, router between"},
+
+		{"id":"switch","type":"text","x":-700,"y":-170,"width":320,"height":180,"color":"5","text":"### Switch\nA **Layer 2** device that forwards traffic **within one subnet**, using **MAC addresses**.\nDoesn't deal with IP."},
+		{"id":"router","type":"text","x":-350,"y":-170,"width":320,"height":180,"color":"1","text":"### Router\nA **Layer 3** device that moves packets **between subnets**, using **IP addresses** and a **routing table**."},
+		{"id":"gateway","type":"text","x":0,"y":-170,"width":300,"height":180,"color":"1","text":"### Default gateway\nThe **router interface a device sends traffic to** when the destination is **outside its own subnet**.\nMust be an address **inside the device's own subnet**."},
+
+		{"id":"g-routing","type":"group","x":-720,"y":80,"width":1040,"height":280,"color":"2","label":"3 · Routing & models — rules and layers"},
+
+		{"id":"route","type":"text","x":-700,"y":150,"width":340,"height":180,"color":"2","text":"### Route\nA rule that says *\"to reach destination X, send to next-hop Y.\"*\n`0.0.0.0/0` is the **default route** — \"everything else goes here.\""},
+		{"id":"osi","type":"text","x":-330,"y":150,"width":320,"height":180,"color":"2","text":"### OSI layers\nThe **7-layer model** of how data moves.\nFor this project you only really use **Layer 2** (switches, MAC) and **Layer 3** (routers, IP)."},
+		{"id":"tcpip","type":"text","x":20,"y":150,"width":280,"height":180,"color":"2","text":"### TCP/IP\nThe real-world protocol stack.\n**TCP** = reliable, ordered delivery.\n**IP** = addressing and routing."},
+
+		{"id":"thread","type":"text","x":-700,"y":420,"width":1000,"height":200,"color":"6","text":"## 🧵 The thread tying them together\nAn **IP + a mask** defines a **subnet**.\nA **switch** connects devices **inside** a subnet.\nA **router** (reached via the **gateway**) connects **subnets to each other**.\n**Routes** tell each device where to send traffic it **can't deliver locally**.\n\n*IP+mask → subnet → switch within → router between (via gateway) → routes for the rest.*"},
+
+		{"id":"links","type":"text","x":360,"y":-590,"width":300,"height":200,"color":"3","text":"## Go deeper\n• [[ip-address-theory.canvas|IP vocabulary]]\n• [[netpractice-basics.canvas|Basics — analogies]]\n• [[netpractice-schema.canvas|Visual schema]]\n• [[subnet-math]] · [[routing]] · [[cheat-sheet]]"}
+	],
+	"edges": [
+		{"id":"t1","fromNode":"ip","fromSide":"right","toNode":"mask","toSide":"left","label":"+ mask"},
+		{"id":"t2","fromNode":"mask","fromSide":"bottom","toNode":"subnet","toSide":"top","label":"defines"},
+		{"id":"t3","fromNode":"subnet","fromSide":"bottom","toNode":"netaddr","toSide":"top","label":"first ="},
+		{"id":"t4","fromNode":"subnet","fromSide":"bottom","toNode":"bcast","toSide":"top","label":"last ="},
+		{"id":"t5","fromNode":"subnet","fromSide":"bottom","toNode":"switch","toSide":"top","label":"within → switch"},
+		{"id":"t6","fromNode":"switch","fromSide":"right","toNode":"router","toSide":"left","label":"between → router"},
+		{"id":"t7","fromNode":"router","fromSide":"right","toNode":"gateway","toSide":"left","label":"reached via"},
+		{"id":"t8","fromNode":"router","fromSide":"bottom","toNode":"route","toSide":"top","label":"uses"},
+		{"id":"t9","fromNode":"route","fromSide":"bottom","toNode":"thread","toSide":"top"}
+	]
+}

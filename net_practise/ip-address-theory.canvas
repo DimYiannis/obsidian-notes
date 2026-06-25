@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"g-anatomy","type":"group","x":-600,"y":-740,"width":1380,"height":960,"color":"4","label":"Anatomy — what the address is made of"},
+		{"id":"g-near","type":"group","x":-570,"y":1180,"width":1390,"height":760,"color":"5","label":"Neighbouring terms — words that travel with IP"},
+		{"id":"g-kinds","type":"group","x":-590,"y":440,"width":1410,"height":560,"color":"2","label":"Kinds of IP — flavours you'll hear about"},
+		{"id":"title","type":"text","text":"# IP Address — The Vocabulary\nWhat an IP address *is* and every word people use around it. Pure theory, no problem-solving.\nGroups below: **Anatomy · Kinds of IP · Neighbouring terms.**","x":-585,"y":-960,"width":965,"height":140,"color":"6"},
+		{"id":"ip","type":"text","text":"### IP address\nA label that identifies a device on a network. *\"Internet Protocol address.\"*\nTwo jobs: **identity** (who) + **location** (where on the net).\nExample: `192.168.1.130`.","x":-580,"y":-725,"width":300,"height":225,"color":"4"},
+		{"id":"mac","type":"text","text":"### MAC address\nHardware ID burned into a network card: `00:1A:2B:...`.\n**IP can change, MAC is fixed.**\nIP = mailing address; MAC = the person's fingerprint.","x":-550,"y":1240,"width":310,"height":200,"color":"5"},
+		{"id":"mask","type":"text","text":"### Subnet mask\nA second 32-bit number marking which bits are **network** (1s) vs **host** (0s).\n`255.255.255.0` = first 24 bits network.\nSame idea as CIDR `/24`.","x":460,"y":-400,"width":280,"height":150,"color":"4"},
+		{"id":"special","type":"text","text":"### Network & broadcast address\nIn every subnet:\n• **network address** = the first one, names the subnet\n• **broadcast** = the last one, \"talk to everyone here\"\nNeither is given to a device.","x":400,"y":-70,"width":340,"height":220,"color":"4"},
+		{"id":"cidr","type":"text","text":"### CIDR / prefix length\n`/24`, `/26`, etc.\nThe number after the slash = **how many bits are network**.\n`/24` = 24 network bits. Shorthand for the mask.","x":-585,"y":0,"width":305,"height":200,"color":"4"},
+		{"id":"octet","type":"text","text":"### Octet (byte)\n32 bits split into **4 groups of 8**.\nEach group = one **octet**, value **0–255**.\n`192 . 168 . 1 . 130`\n8 bits → 2⁸ = 256 possible values.","x":400,"y":-725,"width":260,"height":225,"color":"4"},
+		{"id":"bit","type":"text","text":"### Bit & binary\nComputers store the address as **bits** — 0s and 1s.\nIPv4 = **32 bits** total.\n`192` in binary = `11000000`.\nThe dotted decimal we read is just a friendlier skin over binary.","x":-56,"y":-710,"width":280,"height":210,"color":"4"},
+		{"id":"dotted","type":"text","text":"### Dotted-decimal notation\nThe human format: four decimals separated by dots.\n`192.168.1.130`\nJust a readable form of the underlying 32 bits.","x":-580,"y":-350,"width":300,"height":200,"color":"4"},
+		{"id":"netpart","type":"text","text":"### Network portion vs host portion\nEvery IP splits in two:\n• **network part** — which network you're on\n• **host part** — which specific device\nThe **mask** decides where the split falls.","x":-206,"y":-350,"width":372,"height":180,"color":"4"},
+		{"id":"subnet","type":"text","text":"### Subnet\nA network sliced into smaller networks.\nAll devices sharing the same network portion = same subnet.\n*\"Sub-network.\"*","x":-160,"y":25,"width":326,"height":175,"color":"4"},
+		{"id":"statdyn","type":"text","text":"### Static vs dynamic (DHCP)\n**Static** — set by hand, never changes.\n**Dynamic** — handed out automatically by a **DHCP** server, can change over time.","x":420,"y":510,"width":320,"height":170,"color":"2"},
+		{"id":"reserved","type":"text","text":"### Reserved / special ranges\n`0.0.0.0` = \"this/any\". `255.255.255.255` = broadcast all.\nLink-local `169.254.x` = self-assigned when no DHCP.","x":400,"y":755,"width":340,"height":185,"color":"2"},
+		{"id":"pubpriv","type":"text","text":"### Public vs private\n**Public** — unique on the whole internet.\n**Private** — reusable inside a home/office, not routable on the internet.\nPrivate ranges: `10.x`, `172.16–31.x`, `192.168.x`.","x":-40,"y":480,"width":340,"height":180,"color":"2"},
+		{"id":"nat","type":"text","text":"### NAT\n*Network Address Translation.*\nLets many private IPs share one public IP at the router. Why your home devices all reach the internet through one address.","x":-40,"y":755,"width":340,"height":185,"color":"2"},
+		{"id":"ipv4","type":"text","text":"### IPv4 vs IPv6\n**IPv4** = 32 bits ≈ 4.3 billion addresses (`192.168.1.1`). Running out.\n**IPv6** = 128 bits, hexadecimal (`2001:db8::1`). Vastly more.","x":-585,"y":480,"width":305,"height":180,"color":"2"},
+		{"id":"loopback","type":"text","text":"### Loopback\n`127.0.0.1` (a.k.a. `localhost`).\nPoints back to your own machine. Used for testing — traffic never leaves the device.","x":-585,"y":740,"width":345,"height":165,"color":"2"},
+		{"id":"dns","type":"text","text":"### DNS\n*Domain Name System.*\nThe phonebook: turns names (`google.com`) into IPs (`142.250.x.x`).\nHumans use names; machines use numbers.","x":440,"y":1240,"width":300,"height":150,"color":"5"},
+		{"id":"packet","type":"text","text":"### Packet\nData chopped into chunks for sending.\nEach packet carries source IP + destination IP in its header, like an envelope.","x":440,"y":1640,"width":340,"height":190,"color":"5"},
+		{"id":"protocol","type":"text","text":"### Protocol (TCP / UDP / IP)\nRules for how data travels.\n**IP** = addressing & routing.\n**TCP** = reliable, ordered.\n**UDP** = fast, no guarantees.","x":-15,"y":1640,"width":315,"height":190,"color":"5"},
+		{"id":"port","type":"text","text":"### Port\nA numbered door on an IP for a specific service.\n`:80` web, `:443` HTTPS, `:22` SSH.\nIP finds the machine; port finds the app on it.","x":-557,"y":1640,"width":317,"height":190,"color":"5"},
+		{"id":"gateway","type":"text","text":"### Default gateway\nThe IP of the **router** that leads off your local network.\nDevices send anything 'not local' here to reach the wider internet.","x":10,"y":1240,"width":290,"height":150,"color":"5"},
+		{"id":"next","type":"text","text":"## Where this leads\nThe anatomy group (network vs host portion, mask, CIDR) is the foundation NetPractice tests.\nFor that side:\n• [[netpractice-basics.canvas|Basics canvas]]\n• [[subnet-math]]\n• [[cheat-sheet]]","x":880,"y":-710,"width":460,"height":220,"color":"3"}
+	],
+	"edges":[
+		{"id":"a1","fromNode":"ip","fromSide":"right","toNode":"bit","toSide":"left"},
+		{"id":"a2","fromNode":"bit","fromSide":"right","toNode":"octet","toSide":"left"},
+		{"id":"a3","fromNode":"octet","fromSide":"bottom","toNode":"dotted","toSide":"top"},
+		{"id":"a4","fromNode":"netpart","fromSide":"right","toNode":"mask","toSide":"left","label":"split set by"},
+		{"id":"a5","fromNode":"mask","fromSide":"bottom","toNode":"cidr","toSide":"top","label":"same as"},
+		{"id":"a6","fromNode":"netpart","fromSide":"bottom","toNode":"subnet","toSide":"top","label":"groups into"},
+		{"id":"a7","fromNode":"subnet","fromSide":"right","toNode":"special","toSide":"left"},
+		{"id":"n1","fromNode":"gateway","fromSide":"top","toNode":"subnet","toSide":"bottom","label":"exit of a"},
+		{"id":"n2","fromNode":"mac","fromSide":"top","toNode":"ip","toSide":"bottom","label":"pairs with"}
+	]
+}

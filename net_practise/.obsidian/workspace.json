@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "netpractice-basics.canvas",
+                "file": "ip-address-theory.canvas",
                 "viewState": {
-                  "x": 267.30518904823947,
-                  "y": -176.01499348109547,
-                  "zoom": -0.9848733079125331
+                  "x": -372.99166946906274,
+                  "y": 120.32431314179672,
+                  "zoom": -1.393319942377631
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "netpractice-basics"
+              "title": "ip-address-theory"
             }
           }
         ]
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netpractice-basics.canvas",
+                "file": "ip-address-theory.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for netpractice-basics"
+              "title": "Backlinks for ip-address-theory"
             }
           },
           {
@@ -116,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "netpractice-basics.canvas",
+                "file": "ip-address-theory.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from netpractice-basics"
+              "title": "Outgoing links from ip-address-theory"
             }
           },
           {
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "netpractice-basics.canvas",
+                "file": "ip-address-theory.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of netpractice-basics"
+              "title": "Outline of ip-address-theory"
             }
           }
         ]
@@ -190,6 +190,8 @@
   "lastOpenFiles": [
     "netpractice-schema.canvas",
     "netpractice-basics.canvas",
+    "ip-address-theory.canvas",
+    "general-theory.canvas",
     "cheat-sheet.md",
     "network-layers.md",
     "index.md",
