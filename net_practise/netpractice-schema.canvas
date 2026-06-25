@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"topo-group","type":"group","x":-380,"y":-420,"width":1460,"height":343,"color":"5","label":"Sample Topology — two subnets joined by a /30 router link"},
+		{"id":"title","type":"text","text":"# NetPractice — Visual Schema\nSame network portion = talk direct. Different = need router.","x":-360,"y":-760,"width":760,"height":80,"color":"6"},
+		{"id":"q-core","type":"text","text":"## The One Question\n**Are these two IPs in the same subnet?**\nMask decides. Everything else serves this.","x":-360,"y":-620,"width":360,"height":120,"color":"4"},
+		{"id":"flow-same","type":"text","text":"### Same subnet?\nCompare **network portion** (bits under the 1s of mask).","x":60,"y":-620,"width":220,"height":140,"color":"4"},
+		{"id":"flow-no","type":"text","text":"**NO →**\nVia router (L3, IP + route).","x":425,"y":-560,"width":210,"height":80,"color":"1"},
+		{"id":"flow-yes","type":"text","text":"**YES →**\nDirect via switch (L2, MAC).","x":470,"y":-700,"width":180,"height":100,"color":"4"},
+		{"id":"hostB","type":"text","text":"### Host B\n`192.168.2.50/24`\nGW: `192.168.2.1`","x":880,"y":-390,"width":180,"height":80,"color":"2"},
+		{"id":"swB","type":"text","text":"**Switch B**\nL2, no config","x":860,"y":-190,"width":110,"height":90,"color":"3"},
+		{"id":"swA","type":"text","text":"**Switch A**\nL2, no config","x":-145,"y":-227,"width":110,"height":120,"color":"3"},
+		{"id":"rtrA","type":"text","text":"### Router A\neth0 `192.168.1.129/26`\n*(gateway for A)*\neth1 `10.0.0.1/30`\n*(link to B)*","x":0,"y":-405,"width":180,"height":215,"color":"1"},
+		{"id":"link","type":"text","text":"**/30 link**\nblock=4\n`.0` net · `.1` · `.2` · `.3` bcast\nonly 2 usable","x":230,"y":-242,"width":140,"height":165,"color":"6"},
+		{"id":"rtrB","type":"text","text":"### Router B\neth1 `10.0.0.2/30`\n*(link to A)*\neth0 `192.168.2.1/24`\n*(gateway for B)*","x":480,"y":-405,"width":180,"height":215,"color":"1"},
+		{"id":"f-err","type":"text","text":"## Errors\n**no interface** → IP/mask wrong, subnets don't line up. Fix IP/mask.\n**no route** → route missing. Add `0.0.0.0/0` or specific route.","x":735,"y":15,"width":470,"height":190,"color":"5"},
+		{"id":"f-route","type":"text","text":"## Routes\n`0.0.0.0/0` = default route (everything else → next-hop).\nHost fix: add default → gateway.\nRouter fix: specific route → far subnet.","x":500,"y":300,"width":300,"height":180,"color":"2"},
+		{"id":"f-gw","type":"text","text":"## Gateway Rule ⚠️\nGateway **must** sit inside host's own subnet.\nHost `.130/26` → GW in `.129–.190`.\n#1 mistake.","x":380,"y":0,"width":300,"height":170,"color":"1"},
+		{"id":"f-table","type":"text","text":"## CIDR Table\n| /n | block | mask | usable |\n|----|-------|------|--------|\n| 24 | 256 | 0   | 254 |\n| 25 | 128 | 128 | 126 |\n| 26 | 64  | 192 | 62  |\n| 27 | 32  | 224 | 30  |\n| 28 | 16  | 240 | 14  |\n| 29 | 8   | 248 | 6   |\n| 30 | 4   | 252 | 2   |\nMasks: 128→192→224→240→248→252","x":30,"y":0,"width":300,"height":440,"color":"4"},
+		{"id":"f-block","type":"text","text":"## Block Size\n`block = 256 − mask_octet`\n`network = largest mult of block ≤ host`\n`broadcast = network + block − 1`\n`usable = net+1 … bcast−1`","x":-405,"y":-15,"width":270,"height":220,"color":"4"},
+		{"id":"f-example","type":"text","text":"## Worked: `.130/26`\nblock=64 → mults 0,64,128,192\nlargest ≤130 = **128**\nnet `.128` · bcast `.191`\nusable `.129–.190`\n`.150`✓ `.200`✗","x":-360,"y":320,"width":270,"height":220,"color":"6"},
+		{"id":"hostA","type":"text","text":"### Host A\n`192.168.1.130/26`\nGW: `192.168.1.129`\nSubnet `.128–.191`","x":-360,"y":-395,"width":180,"height":195,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"q-core","fromSide":"right","toNode":"flow-same","toSide":"left"},
+		{"id":"e2","fromNode":"flow-same","fromSide":"right","toNode":"flow-yes","toSide":"left","label":"yes"},
+		{"id":"e3","fromNode":"flow-same","fromSide":"right","toNode":"flow-no","toSide":"left","label":"no"},
+		{"id":"e4","fromNode":"hostA","fromSide":"right","toNode":"swA","toSide":"left"},
+		{"id":"e5","fromNode":"swA","fromSide":"right","toNode":"rtrA","toSide":"left"},
+		{"id":"e6","fromNode":"rtrA","fromSide":"right","toNode":"link","toSide":"left","label":"/30"},
+		{"id":"e7","fromNode":"link","fromSide":"right","toNode":"rtrB","toSide":"left","label":"/30"},
+		{"id":"e8","fromNode":"rtrB","fromSide":"right","toNode":"swB","toSide":"left"},
+		{"id":"e9","fromNode":"swB","fromSide":"top","toNode":"hostB","toSide":"bottom"},
+		{"id":"e10","fromNode":"f-block","fromSide":"bottom","toNode":"f-example","toSide":"top"},
+		{"id":"e11","fromNode":"f-gw","fromSide":"bottom","toNode":"f-route","toSide":"top"}
+	]
+}

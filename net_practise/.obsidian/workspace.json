@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "dc4abc9064569eb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f505d0883f8714d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "49d3295358c691d5",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "netpractice-schema.canvas",
+                "viewState": {
+                  "x": 418.0560969193815,
+                  "y": 26.658560563776103,
+                  "zoom": -1.0207250112401627
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "netpractice-schema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d99ddc0c2ecbc3d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "07f92507841e1292",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "694bffae4c3c6ec0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "391ea5a97399109c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "82b5cb22d138c005",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "960379fe8cc4c7c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "01a3364934df4ab6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b59df7a89024df3a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "netpractice-schema.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for netpractice-schema"
+            }
+          },
+          {
+            "id": "dbdad20d183a3cee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "netpractice-schema.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from netpractice-schema"
+            }
+          },
+          {
+            "id": "2aba5fa72f8bab5f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4ab64b7b2638078d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "c3ebe0c9cd8da154",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "netpractice-schema.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of netpractice-schema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "49d3295358c691d5",
+  "lastOpenFiles": [
+    "cheat-sheet.md",
+    "netpractice-schema.canvas",
+    "network-layers.md",
+    "index.md",
+    "routing.md",
+    "subnet-math.md",
+    "Welcome.md"
+  ]
+}
