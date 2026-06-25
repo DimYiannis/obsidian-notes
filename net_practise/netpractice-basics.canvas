@@ -1,0 +1,51 @@
+{
+	"nodes": [
+		{"id":"title","type":"text","x":-500,"y":-820,"width":900,"height":110,"color":"6","text":"# NetPractice — The Basics (Plain Words)\nOne analogy the whole way down: **the internet is a city of houses and streets.**\nFollow top → bottom. Each blue card = real term. Each yellow card = the analogy."},
+
+		{"id":"a-ip","type":"text","x":-500,"y":-660,"width":280,"height":160,"color":"3","text":"## 🏠 Analogy: IP = a house address\n`192.168.1.130`\nLike *\"10 Baker Street\"*.\nEvery device gets one. It says **where you are** so mail finds you."},
+		{"id":"t-ip","type":"text","x":-180,"y":-660,"width":300,"height":160,"color":"4","text":"### Term: IP address\n4 numbers, each 0–255: `192.168.1.130`.\nSplits into two halves:\n• **street part** (the network)\n• **house part** (the host / the device)\nWhich half is which? → the **mask** tells you."},
+
+		{"id":"a-mask","type":"text","x":-500,"y":-460,"width":280,"height":180,"color":"3","text":"## ✂️ Analogy: mask = where street name ends\nThink of the address written as:\n**`[ STREET ][ HOUSE ]`**\nThe mask is the **scissors line** cutting between them.\nMove the line → bigger or smaller streets."},
+		{"id":"t-mask","type":"text","x":-180,"y":-460,"width":340,"height":230,"color":"4","text":"### Term: subnet mask  (the `/26` part)\n`/26` means: **first 26 bits are the street**, rest is the house.\nIn the last number, the mask draws the line.\n\n**Block size = 256 − mask number.**\n`/26` → mask `192` → block `64`.\nSo streets are 64 addresses wide: `.0–.63`, `.64–.127`, `.128–.191`…\nYour `.130` lives on street **`.128–.191`**."},
+
+		{"id":"a-subnet","type":"text","x":-500,"y":-200,"width":280,"height":190,"color":"3","text":"## 🏘️ Analogy: subnet = one street\nAll houses on the **same street** can just **shout** to each other. No middle-man.\nTwo houses on **different streets** can't shout — too far. They need the **post office**."},
+		{"id":"t-subnet","type":"text","x":-180,"y":-200,"width":340,"height":190,"color":"4","text":"### Term: subnet\nA group of IPs sharing the same **street part**.\nSame street part → **talk directly**.\nDifferent street part → must go through a **router**.\n\n2 reserved houses on every street:\n• **first** = street sign (network address)\n• **last** = the town crier (broadcast)\nCan't live in those. Everyone else is usable."},
+
+		{"id":"a-switch","type":"text","x":270,"y":-200,"width":260,"height":190,"color":"2","text":"## 🚪 Analogy: switch = the hallway\nA dumb hallway connecting houses **on the same street**.\nIt just passes your shout to the right door.\nDoesn't read addresses, doesn't think. No setup."},
+		{"id":"t-switch","type":"text","x":580,"y":-200,"width":300,"height":190,"color":"5","text":"### Term: switch (Layer 2)\nConnects devices **inside one subnet**.\nUses MAC (hardware) labels, not IPs.\n**In NetPractice you never configure a switch** — it's invisible plumbing.\nIf two things are on the same street, a switch is enough."},
+
+		{"id":"a-router","type":"text","x":270,"y":-460,"width":260,"height":190,"color":"2","text":"## 📮 Analogy: router = the post office\nSits between streets. The **only** thing that can move mail from one street to another.\nIt reads the **street part** of the address and forwards toward it."},
+		{"id":"t-router","type":"text","x":580,"y":-460,"width":300,"height":230,"color":"5","text":"### Term: router (Layer 3)\nConnects **different subnets**.\nHas one foot (interface + IP) on **each** street it touches.\nUses a **routing table**: *\"for street X, send out this foot.\"*\n\nReads IPs (not MACs). This is the only device that crosses subnet boundaries."},
+
+		{"id":"a-gw","type":"text","x":270,"y":-660,"width":260,"height":160,"color":"1","text":"## 🚪📮 Analogy: gateway = the post office's door ON YOUR street\nTo send mail off your street, you walk it to the post-office door **that stands on your street**.\nDoor must be on your street — or you can't reach it!"},
+		{"id":"t-gw","type":"text","x":580,"y":-660,"width":300,"height":160,"color":"1","text":"### Term: default gateway\nThe **router's IP that lives on your subnet**.\nHost `.130` (street `.128–.191`) → gateway must be `.129–.190`.\nGateway `.200`? Wrong street → unreachable.\n**#1 NetPractice mistake.**"},
+
+		{"id":"journey","type":"text","x":-500,"y":40,"width":1380,"height":120,"color":"6","text":"## 📦 Full journey of one packet (Host A `192.168.1.130/26` → Host B `192.168.2.50/24`)\nDifferent streets → can't shout. So follow the arrows below. Same idea every level of NetPractice."},
+
+		{"id":"j1","type":"text","x":-500,"y":200,"width":250,"height":130,"color":"4","text":"### 1. Host A asks\n*\"Is B on my street?\"*\nB = `192.168.2.x`, my street = `192.168.1.128–191`.\n**No.** → send to my gateway."},
+		{"id":"j2","type":"text","x":-220,"y":200,"width":250,"height":130,"color":"5","text":"### 2. To the gateway\nA hands packet to its gateway `192.168.1.129` = **Router A's foot** on street A."},
+		{"id":"j3","type":"text","x":60,"y":200,"width":250,"height":130,"color":"5","text":"### 3. Router hops\nRouter A → over the `/30` link → Router B. Each router checks its table for street `192.168.2.x`."},
+		{"id":"j4","type":"text","x":340,"y":200,"width":250,"height":130,"color":"5","text":"### 4. Router B delivers\nB's foot `192.168.2.1` is on street B. Drops onto street B's switch."},
+		{"id":"j5","type":"text","x":620,"y":200,"width":250,"height":130,"color":"4","text":"### 5. Host B receives\nSwitch shouts to `192.168.2.50`. Arrived. Reply walks back the same way."},
+
+		{"id":"recap","type":"text","x":-500,"y":380,"width":600,"height":180,"color":"6","text":"## 🧠 Remember just this\n1. **Mask** cuts each address into **street + house**.\n2. Same street → **switch** is enough (shout).\n3. Different street → need a **router** (post office).\n4. **Gateway** = the router's door, and it MUST be on your street.\n5. **Route** = the post office's instructions for which way to forward."},
+		{"id":"next","type":"text","x":120,"y":380,"width":300,"height":180,"color":"3","text":"## Next step\nOnce this clicks, open:\n• [[subnet-math]] — do the street math\n• [[netpractice-schema.canvas|Visual schema]] — the cheat-sheet canvas\n• [[cheat-sheet]] — formulas for the defense"}
+	],
+	"edges": [
+		{"id":"e1","fromNode":"a-ip","fromSide":"right","toNode":"t-ip","toSide":"left"},
+		{"id":"e2","fromNode":"a-mask","fromSide":"right","toNode":"t-mask","toSide":"left"},
+		{"id":"e3","fromNode":"a-subnet","fromSide":"right","toNode":"t-subnet","toSide":"left"},
+		{"id":"e4","fromNode":"a-switch","fromSide":"right","toNode":"t-switch","toSide":"left"},
+		{"id":"e5","fromNode":"a-router","fromSide":"right","toNode":"t-router","toSide":"left"},
+		{"id":"e6","fromNode":"a-gw","fromSide":"right","toNode":"t-gw","toSide":"left"},
+		{"id":"f1","fromNode":"t-ip","fromSide":"bottom","toNode":"a-mask","toSide":"top","label":"which half?"},
+		{"id":"f2","fromNode":"t-mask","fromSide":"bottom","toNode":"a-subnet","toSide":"top","label":"defines"},
+		{"id":"f3","fromNode":"t-subnet","fromSide":"right","toNode":"a-switch","toSide":"left","label":"same street"},
+		{"id":"f4","fromNode":"a-switch","fromSide":"top","toNode":"a-router","toSide":"bottom","label":"diff street"},
+		{"id":"f5","fromNode":"a-router","fromSide":"top","toNode":"a-gw","toSide":"bottom","label":"reach it via"},
+		{"id":"j-1-2","fromNode":"j1","fromSide":"right","toNode":"j2","toSide":"left"},
+		{"id":"j-2-3","fromNode":"j2","fromSide":"right","toNode":"j3","toSide":"left"},
+		{"id":"j-3-4","fromNode":"j3","fromSide":"right","toNode":"j4","toSide":"left"},
+		{"id":"j-4-5","fromNode":"j4","fromSide":"right","toNode":"j5","toSide":"left"}
+	]
+}

@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "netpractice-basics.canvas",
                 "viewState": {
-                  "x": 418.0560969193815,
-                  "y": 26.658560563776103,
-                  "zoom": -1.0207250112401627
+                  "x": 267.30518904823947,
+                  "y": -176.01499348109547,
+                  "zoom": -0.9848733079125331
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "netpractice-schema"
+              "title": "netpractice-basics"
             }
           }
         ]
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "netpractice-basics.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for netpractice-schema"
+              "title": "Backlinks for netpractice-basics"
             }
           },
           {
@@ -116,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "netpractice-basics.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from netpractice-schema"
+              "title": "Outgoing links from netpractice-basics"
             }
           },
           {
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "netpractice-basics.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of netpractice-schema"
+              "title": "Outline of netpractice-basics"
             }
           }
         ]
@@ -188,8 +188,9 @@
   },
   "active": "49d3295358c691d5",
   "lastOpenFiles": [
-    "cheat-sheet.md",
     "netpractice-schema.canvas",
+    "netpractice-basics.canvas",
+    "cheat-sheet.md",
     "network-layers.md",
     "index.md",
     "routing.md",
