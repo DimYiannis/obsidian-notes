@@ -2,7 +2,7 @@
 title: "Tokenization"
 type: concept
 tags: [llm, pre-training, inference, tokens]
-source_count: 3
+source_count: 4
 ---
 
 ## Definition
@@ -53,6 +53,7 @@ raw text
 - [[token-character-mismatch]] — engineering challenge arising from multi-char tokens in constrained decoding
 - [[constrained-decoding]] — logit masking operates on tokens; must bridge to character-level grammars
 - [[hallucination]] — tokenization doesn't cause hallucination directly, but spelling/counting failures are tokenization artifacts
+- [[retrieval-tokenization]] — the search-side namesake: BPE makes model-input tokens, retrieval tokenization makes lexical match terms — different problems
 
 ## Open Questions
 

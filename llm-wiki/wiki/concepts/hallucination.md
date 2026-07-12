@@ -2,7 +2,7 @@
 title: "Hallucination"
 type: concept
 tags: [llm, failure-mode, alignment, factuality]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -42,6 +42,7 @@ When model is uncertain, emit special tokens to trigger web search → retrieved
 - [[function-calling]] — tool use mechanism for grounding model in real data
 - [[tokenization]] — some apparent hallucinations are actually tokenization artifacts
 - [[chain-of-thought]] — helps catch errors mid-sequence via self-checking
+- [[retrieval-augmented-generation]] — systematizes Mitigation 2: retrieval puts corpus text in context so answers are [[grounding|grounded]] instead of recalled from parameters
 
 ## Open Questions
 

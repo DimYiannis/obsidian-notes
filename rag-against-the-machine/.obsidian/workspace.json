@@ -1,20 +1,27 @@
 {
   "main": {
-    "id": "26620155737fe5ee",
+    "id": "bf154a3c173ef769",
     "type": "split",
     "children": [
       {
-        "id": "8c2069c14c1ab589",
+        "id": "0953e05ed9c5d946",
         "type": "tabs",
         "children": [
           {
-            "id": "5588223f3452224a",
+            "id": "bc4db71abd76afb0",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "canvas",
+              "state": {
+                "file": "RAG workflow.canvas",
+                "viewState": {
+                  "x": -2487.183224534941,
+                  "y": -2672.787028940173,
+                  "zoom": -1.5599685910101004
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "RAG workflow"
             }
           }
         ]
@@ -23,15 +30,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "512ccaebd5899e17",
+    "id": "549e9e12615d498c",
     "type": "split",
     "children": [
       {
-        "id": "fd9477d49eced113",
+        "id": "190b2e6dc3c40a7b",
         "type": "tabs",
         "children": [
           {
-            "id": "0d04b3831b1e3346",
+            "id": "890234491ca2629c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +51,7 @@
             }
           },
           {
-            "id": "3d874936c76372e9",
+            "id": "68ef5e08df18b0a1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +68,7 @@
             }
           },
           {
-            "id": "b6e518f406ef0b8c",
+            "id": "39f22fb794dcb6f5",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +84,20 @@
     "width": 300
   },
   "right": {
-    "id": "2bbe8b2ea9ebec81",
+    "id": "46be75843b0764c1",
     "type": "split",
     "children": [
       {
-        "id": "6d7e93867cd09926",
+        "id": "ee88a6581c7cec5d",
         "type": "tabs",
         "children": [
           {
-            "id": "45fb7647a9fa918a",
+            "id": "45d655fbc31b4145",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "concepts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +107,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for concepts"
             }
           },
           {
-            "id": "130aaa27b622e605",
+            "id": "136b67c7b1c63641",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "concepts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from concepts"
             }
           },
           {
-            "id": "210ee9b5588f3d0f",
+            "id": "a7dbb35829023959",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +140,7 @@
             }
           },
           {
-            "id": "2c3e25e7b7fd370c",
+            "id": "a711f68ddb5ffec9",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,17 +154,18 @@
             }
           },
           {
-            "id": "2a697ec21ed30b56",
+            "id": "4f8a59883553bac9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "concepts.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of concepts"
             }
           }
         ]
@@ -176,43 +186,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "5588223f3452224a",
+  "active": "bc4db71abd76afb0",
   "lastOpenFiles": [
-    "wiki/sources/2026-06-13-attention-is-all-you-need.md",
-    "wiki/entities/xgrammar.md",
-    "wiki/concepts/constrained-decoding.md",
-    "wiki/concepts/llm-training-pipeline.md",
-    "wiki/concepts/multi-head-attention.md",
-    "wiki/entities/google-brain.md",
-    "wiki/sources/2026-06-13-transformer-circuits-framework.md",
-    "wiki/concepts/context-window.md.tmp.67136.49a7a2d73f8b",
-    "wiki/entities/anthropic.md",
-    "wiki/concepts/mechanistic-interpretability.md",
-    "wiki/concepts/induction-heads.md",
-    "wiki/concepts/residual-stream.md",
-    "wiki/concepts/feed-forward-network.md",
-    "wiki/concepts/query-key-value.md",
-    "wiki/concepts/draft-conditioned-decoding.md",
-    "wiki/sources/2026-06-08-dccd.md",
-    "wiki/sources/2026-06-08-dccd.md.tmp.48189.cfd78849030f",
-    "wiki/sources/2026-06-08-dont-fine-tune-decode.md",
-    "wiki/sources/2026-06-01-call-me-maybe.md",
-    "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
-    "wiki/entities/alphago.md",
-    "wiki/sources/2026-06-01-tokenization-embeddings-context.md",
-    "wiki/concepts/rlhf.md",
-    "wiki/concepts/chain-of-thought.md",
-    "wiki/concepts/tokenization.md",
-    "wiki/sources/2026-06-01-karpathy-llm-intro.md",
-    "wiki/sources",
-    "wiki/concepts/embeddings.md",
-    "wiki/entities/andrej-karpathy.md",
-    "notes",
-    "wiki/synthesis",
-    "wiki/meta",
-    "wiki/concepts",
-    "wiki/entities",
-    "wiki",
-    "raw/assets"
+    "7. Evaluate.md",
+    "RAG workflow.canvas",
+    "concepts.md",
+    "context.md"
   ]
 }

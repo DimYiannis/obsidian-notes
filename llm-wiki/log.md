@@ -87,3 +87,12 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - Concepts updated: self-attention (source_count→2), multi-head-attention (source_count→2), feed-forward-network (source_count→2), chain-of-thought (source_count→2)
 - Note: flagged ⚠️-style caveat on feed-forward-network — paper studies attention-only models, does NOT establish the "MLP processes" claim from user's transformer explainer
 - Pages created: 4 | Pages updated: 4
+
+## [2026-07-12] ingest | RAG Theory — Study Context
+- Source: .raw/2026-07-12-rag-theory-study-guide.md (local note; study guide for Codam RAG project)
+- Concepts created: retrieval-augmented-generation, information-retrieval, lexical-retrieval, tf-idf, bm25, inverted-index, retrieval-tokenization, dense-retrieval, chunking, retrieval-evaluation, grounding, lost-in-the-middle
+- Entities created: rag-against-the-machine (project)
+- Concepts updated: hallucination (→2, RAG mitigation link), context-window (→4, RAG + lost-in-the-middle links), embeddings (→3, dense-retrieval link), tokenization (→4, retrieval-tokenization contrast)
+- Entities updated: vllm (→2, corpus role)
+- New index section: Retrieval / RAG
+- Pages created: 14 | Pages updated: 6

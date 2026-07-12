@@ -2,7 +2,7 @@
 title: "Embeddings"
 type: concept
 tags: [llm, representation, neural-networks, tokenization]
-source_count: 2
+source_count: 3
 ---
 
 ## Definition
@@ -49,6 +49,7 @@ Next Token Prediction
 - [[transformer-architecture]] — embeddings (plus positional encodings) are its input representation
 - [[self-attention]] — operates on embeddings to build contextual representations
 - [[constrained-decoding]] — operates on logits (output of Transformer), not embeddings directly, but both live in the same pipeline
+- [[dense-retrieval]] — applies the same idea at document/query level: semantic similarity as vector proximity for search
 
 ## Open Questions
 

@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"18072fa325e69bd8","type":"file","file":"7. Evaluate.md","x":-2320,"y":80,"width":800,"height":800},
+		{"id":"07963e9214d58ac7","type":"file","file":"6. Generate answer.md","x":-920,"y":80,"width":1040,"height":720},
+		{"id":"f6a54d8103c479b6","type":"file","file":"5. Search — BM25 top-k.md","x":920,"y":80,"width":900,"height":840},
+		{"id":"e5b45c7092b368a5","type":"file","file":"4. Build inverted index.md","x":1320,"y":-1980,"width":760,"height":720},
+		{"id":"d4c36b6f81a25794","type":"file","file":"3. Tokenize.md","x":520,"y":-1890,"width":740,"height":750},
+		{"id":"a1f09b3c5d7e2461","type":"file","file":"0. Overview.md","x":-2200,"y":-1310,"width":960,"height":1080},
+		{"id":"b2e18c4d6f803572","type":"file","file":"1. Corpus & data models.md","x":-1140,"y":-2060,"width":920,"height":680},
+		{"id":"3ab5c6d7e8f90a12","type":"file","file":"concepts.md","x":-3420,"y":-480,"width":820,"height":1120},
+		{"id":"29a4b5c6d7e8f901","type":"file","file":"context.md","x":-3360,"y":-3180,"width":880,"height":2480},
+		{"id":"c3d27a5e70914683","type":"file","file":"2. Chunking.md","x":-280,"y":-1140,"width":720,"height":800}
+	],
+	"edges":[
+		{"id":"291836b437f7ace9","fromNode":"a1f09b3c5d7e2461","fromSide":"right","toNode":"b2e18c4d6f803572","toSide":"left"},
+		{"id":"4bc6d7e8f90a1b23","fromNode":"29a4b5c6d7e8f901","fromSide":"right","toNode":"a1f09b3c5d7e2461","toSide":"left","label":"theory"},
+		{"id":"5cd7e8f90a1b2c34","fromNode":"3ab5c6d7e8f90a12","fromSide":"top","toNode":"29a4b5c6d7e8f901","toSide":"bottom","label":"wiki pages"},
+		{"id":"3a2947c548082bfa","fromNode":"b2e18c4d6f803572","fromSide":"right","toNode":"c3d27a5e70914683","toSide":"left"},
+		{"id":"4b3a58d659193c0b","fromNode":"c3d27a5e70914683","fromSide":"right","toNode":"d4c36b6f81a25794","toSide":"left"},
+		{"id":"5c4b69e76a2a4d1c","fromNode":"d4c36b6f81a25794","fromSide":"right","toNode":"e5b45c7092b368a5","toSide":"left"},
+		{"id":"6d5c7af87b3b5e2d","fromNode":"e5b45c7092b368a5","fromSide":"bottom","toNode":"f6a54d8103c479b6","toSide":"top"},
+		{"id":"7e6d8b098c4c6f3e","fromNode":"d4c36b6f81a25794","fromSide":"bottom","toNode":"f6a54d8103c479b6","toSide":"left","label":"same tokenizer for queries"},
+		{"id":"8f7e9c1a9d5d704f","fromNode":"f6a54d8103c479b6","fromSide":"left","toNode":"07963e9214d58ac7","toSide":"right"},
+		{"id":"908fad2bae6e8150","fromNode":"07963e9214d58ac7","fromSide":"left","toNode":"18072fa325e69bd8","toSide":"right"}
+	]
+}

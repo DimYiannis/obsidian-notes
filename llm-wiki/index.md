@@ -17,6 +17,7 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - 2026-06-08-dccd — Reddy et al. (2025); draft-conditioned decoding; projection tax problem; GSM8K 15.2%→39.0%
 - 2026-06-13-attention-is-all-you-need — Vaswani et al. (2017); the Transformer; self-attention, multi-head, Q/K/V, softmax(QKᵀ/√dₖ)V; WMT 2014 SOTA
 - 2026-06-13-transformer-circuits-framework — Elhage et al. (2021, Anthropic); mechanistic interpretability; residual stream, QK/OV circuits, induction heads; attention-only (MLP caveat)
+- 2026-07-12-rag-theory-study-guide — layered RAG theory guide for the Codam project; IR foundations, TF-IDF→BM25, chunking, recall@k/IoU, grounding
 
 ---
 
@@ -26,12 +27,13 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - llguidance — Rust Earley parser, Microsoft, powers OpenAI Structured Outputs (source_count: 1)
 - outlines-library — pioneering FSM-based constrained decoding library (Willard & Louf, 2023) (source_count: 1)
 - fantase — Token Search Trie + RoBERTa reranker for function calling; Amazon, EMNLP 2024 (source_count: 1)
-- vllm — LLM inference framework; uses XGrammar as default constrained decoding backend (source_count: 1)
+- vllm — LLM inference framework; uses XGrammar as default constrained decoding backend; RAG project corpus (source_count: 2)
 - andrej-karpathy — AI researcher; OpenAI co-founder; author of LLM intro video and llm.c (source_count: 1)
 - anthropic — AI safety lab; Transformer Circuits interpretability thread; Claude models (source_count: 1)
 - google-brain — Google deep-learning research group; origin of the Transformer paper (source_count: 1)
 - deepseek-r1 — open-weight reasoning model; first public RL training paper for LLMs (source_count: 1)
 - alphago — DeepMind Go AI; historical RL precedent for surpassing human performance (source_count: 1)
+- rag-against-the-machine — Codam project: BM25 RAG over vLLM 0.10.1, Qwen3-0.6B, recall@k graded (source_count: 1)
 
 ---
 
@@ -41,14 +43,28 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - llm-training-pipeline — three-stage overview: pre-training → SFT → RL (source_count: 1)
 - pre-training — stage 1: internet text → base model via next-token prediction (source_count: 1)
 - base-model — output of pre-training; internet token autocomplete; not yet an assistant (source_count: 1)
-- tokenization — text → token IDs via BPE; vocab size tradeoff; multi-char tokens cause spelling/counting failures (source_count: 3)
-- embeddings — token IDs → dense vectors via embedding matrix (vocab_size × dim); semantic similarity in vector space (source_count: 2)
+- tokenization — text → token IDs via BPE; vocab size tradeoff; multi-char tokens cause spelling/counting failures (source_count: 4)
+- embeddings — token IDs → dense vectors via embedding matrix (vocab_size × dim); semantic similarity in vector space (source_count: 3)
 - supervised-fine-tuning — stage 2: human labeler conversations → assistant (source_count: 1)
 - reinforcement-learning-llm — stage 3 (verifiable): trial-and-error → emergent reasoning; real magic (source_count: 1)
 - rlhf — stage 3 (unverifiable): reward model simulates human preferences; gameable; limited (source_count: 1)
 - chain-of-thought — emergent reasoning strategy from RL; backtracking, self-checking, multi-perspective (source_count: 2)
-- hallucination — LLM fabrication; causes (SFT distribution) and mitigations (self-knowledge + tools) (source_count: 1)
-- context-window — working memory; measured in tokens; effective context scales with tokenization quality (source_count: 3)
+- hallucination — LLM fabrication; causes (SFT distribution) and mitigations (self-knowledge + tools) (source_count: 2)
+- context-window — working memory; measured in tokens; effective context scales with tokenization quality (source_count: 4)
+
+### Retrieval / RAG
+- retrieval-augmented-generation — retrieve then generate; parametric vs non-parametric knowledge; recall-first asymmetry (source_count: 1)
+- information-retrieval — query/document/corpus/relevance; the 50-year-old field behind RAG retrieval (source_count: 1)
+- lexical-retrieval — exact term matching over bag-of-words; strong on identifiers, weak on synonyms (source_count: 1)
+- tf-idf — term frequency × inverse document frequency; BM25's pedagogical predecessor (source_count: 1)
+- bm25 — TF saturation (k1) + length normalization (b) over IDF; the project's retriever (source_count: 1)
+- inverted-index — term → posting list; why lexical search is fast; heapq top-k (source_count: 1)
+- retrieval-tokenization — analysis for search: identifier splitting, keep-original rule, same analyzer both sides (source_count: 1)
+- dense-retrieval — embedding vectors + nearest neighbor; solves vocabulary mismatch, blurs identifiers; RRF hybrid (source_count: 1)
+- chunking — retrieval granularity; fixed/sliding/structure-aware; size vs IoU tradeoff (source_count: 1)
+- retrieval-evaluation — recall@k, precision@k, IoU span overlap; recall at retrieval, precision at generation (source_count: 1)
+- grounding — answer from retrieved context, not parametric memory; faithfulness ≠ correctness (source_count: 1)
+- lost-in-the-middle — U-shaped attention over long context; chunk ordering matters (source_count: 1)
 
 ### LLM Inference / Structured Output
 - constrained-decoding — standard single-pass technique; JSON state machine; fine-tuning vs decode-time (source_count: 4)

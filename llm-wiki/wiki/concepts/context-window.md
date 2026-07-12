@@ -2,7 +2,7 @@
 title: "Context Window"
 type: concept
 tags: [llm, inference, memory, architecture]
-source_count: 3
+source_count: 4
 ---
 
 ## Definition
@@ -40,6 +40,8 @@ The finite token sequence a model can process in a single forward pass. Everythi
 - [[hallucination]] — mitigation: put facts in context rather than relying on parameter recollection
 - [[function-calling]] — tool results (web search, code output) enter context window
 - [[rlhf]] — [[reinforcement-learning-llm]] both operate within context window during rollout generation
+- [[retrieval-augmented-generation]] — the finite window is why retrieval must *select*; retrieved chunks are working memory
+- [[lost-in-the-middle]] — content in the middle of a long context is used worse than at the edges
 
 ## Open Questions
 
