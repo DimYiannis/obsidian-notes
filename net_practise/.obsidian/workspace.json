@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "general-theory.canvas",
+                "file": "netpractice-schema.canvas",
                 "viewState": {
-                  "x": -291.57857745273446,
-                  "y": -517.0324703470853,
-                  "zoom": -0.27101232704843065
+                  "x": 255.51524399577127,
+                  "y": 381.3931666636913,
+                  "zoom": -0.5339327186818359
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "general-theory"
+              "title": "netpractice-schema"
             }
           }
         ]
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "general-theory.canvas",
+                "file": "netpractice-schema.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for general-theory"
+              "title": "Backlinks for netpractice-schema"
             }
           },
           {
@@ -116,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "general-theory.canvas",
+                "file": "netpractice-schema.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from general-theory"
+              "title": "Outgoing links from netpractice-schema"
             }
           },
           {
@@ -159,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general-theory.canvas",
+                "file": "netpractice-schema.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of general-theory"
+              "title": "Outline of netpractice-schema"
             }
           }
         ]
@@ -188,11 +188,12 @@
   },
   "active": "49d3295358c691d5",
   "lastOpenFiles": [
+    "netpractice-basics.canvas",
+    "general-theory.canvas",
     "ip-theory/ip-address.md",
     "ip-theory.md",
     "ip-theory/ip-theory.md",
     "index.md",
-    "general-theory.canvas",
     "ip-address-theory.canvas",
     "ip-theory/packet.md",
     "ip-theory/protocol.md",
@@ -216,7 +217,6 @@
     "ip-theory/bit-binary.md",
     "ip-theory",
     "cheat-sheet.md",
-    "netpractice-schema.canvas",
-    "netpractice-basics.canvas"
+    "netpractice-schema.canvas"
   ]
 }

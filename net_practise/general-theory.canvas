@@ -14,9 +14,9 @@
 		{"id":"gateway","type":"text","text":"### Default gateway\nThe **router interface a device sends traffic to** when the destination is **outside its own subnet**.\nMust be an address **inside the device's own subnet**.","x":420,"y":270,"width":300,"height":260,"color":"1"},
 		{"id":"switch","type":"text","text":"### Switch\nA **Layer 2** device that forwards traffic **within one subnet**, using **MAC addresses**.\nDoesn't deal with IP.","x":-700,"y":310,"width":320,"height":180,"color":"5"},
 		{"id":"router","type":"text","text":"### Router\nA **Layer 3** device that moves packets **between subnets**, using **IP addresses** and a **routing table**.","x":-100,"y":310,"width":320,"height":180,"color":"1"},
-		{"id":"bcast","type":"text","text":"### Broadcast address\nThe **last** address in a subnet. **Also can't be assigned to a device.**","x":520,"y":-177,"width":300,"height":140,"color":"4"},
 		{"id":"subnet","type":"text","text":"### Subnet\nA group of addresses that share the same **network part**.\nDevices in the **same subnet talk directly**; devices in **different subnets need a router**.","x":-105,"y":-419,"width":380,"height":170,"color":"4"},
-		{"id":"netaddr","type":"text","text":"### Network address\nThe **first** address in a subnet — the subnet's \"name.\" **Can't be assigned to a device.**","x":-700,"y":-249,"width":320,"height":145,"color":"4"}
+		{"id":"netaddr","type":"text","text":"### Network address\nThe **first** address in a subnet — the subnet's \"name.\" **Can't be assigned to a device.**","x":-700,"y":-249,"width":320,"height":145,"color":"4"},
+		{"id":"bcast","type":"text","text":"### Broadcast address\nThe **last** address in a subnet. **Also can't be assigned to a device.**","x":520,"y":-200,"width":300,"height":140,"color":"4"}
 	],
 	"edges":[
 		{"id":"t1","fromNode":"ip","fromSide":"right","toNode":"mask","toSide":"left","label":"+ mask"},
