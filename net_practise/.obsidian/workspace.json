@@ -11,17 +11,14 @@
             "id": "49d3295358c691d5",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "netpractice-schema.canvas",
-                "viewState": {
-                  "x": 255.51524399577127,
-                  "y": 381.3931666636913,
-                  "zoom": -0.5339327186818359
-                }
+                "file": "network-layers.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "netpractice-schema"
+              "icon": "lucide-file",
+              "title": "network-layers"
             }
           }
         ]
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "network-layers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for netpractice-schema"
+              "title": "Backlinks for network-layers"
             }
           },
           {
@@ -116,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "network-layers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from netpractice-schema"
+              "title": "Outgoing links from network-layers"
             }
           },
           {
@@ -159,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "netpractice-schema.canvas",
+                "file": "network-layers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of netpractice-schema"
+              "title": "Outline of network-layers"
             }
           }
         ]
@@ -188,13 +185,14 @@
   },
   "active": "49d3295358c691d5",
   "lastOpenFiles": [
+    "netpractice-schema.canvas",
     "netpractice-basics.canvas",
+    "ip-address-theory.canvas",
     "general-theory.canvas",
     "ip-theory/ip-address.md",
     "ip-theory.md",
     "ip-theory/ip-theory.md",
     "index.md",
-    "ip-address-theory.canvas",
     "ip-theory/packet.md",
     "ip-theory/protocol.md",
     "ip-theory/port.md",
@@ -216,7 +214,6 @@
     "ip-theory/octet.md",
     "ip-theory/bit-binary.md",
     "ip-theory",
-    "cheat-sheet.md",
-    "netpractice-schema.canvas"
+    "cheat-sheet.md"
   ]
 }
