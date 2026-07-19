@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "bac8b0ebda766ee9",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d79301efd7e39b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afda7a8c8b1a63a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ds-theory/hash-table.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hash-table"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "103919b958934bec",
+    "type": "split",
+    "children": [
+      {
+        "id": "30b60935b5f2c51d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ccc193019c70d600",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d1558b366b6f0bec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "258c518f633f32c1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d4bc7fd2071b3be6",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa18a72150ce3f49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bd18c8dab544695",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ds-theory/hash-table.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for hash-table"
+            }
+          },
+          {
+            "id": "cae5539ca14f22c5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ds-theory/hash-table.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from hash-table"
+            }
+          },
+          {
+            "id": "9dc5ab0610e06d04",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "be1b6e032ab12047",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0916ec27c4af18f2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ds-theory/hash-table.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of hash-table"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "afda7a8c8b1a63a5",
+  "lastOpenFiles": [
+    "ds-theory/hash-function.md",
+    "ds-theory/graph.md",
+    "ds-theory/ds-theory.md",
+    "ds-theory/dfs.md",
+    "ds-theory/collision.md",
+    "ds-theory/binary-tree.md",
+    "ds-theory/binary-search-tree.md",
+    "ds-theory/big-o.md",
+    "ds-theory/bfs.md",
+    "ds-theory/array.md",
+    "ds-theory/adjacency-list.md",
+    "cheat-sheet.md",
+    "index.md"
+  ]
+}
