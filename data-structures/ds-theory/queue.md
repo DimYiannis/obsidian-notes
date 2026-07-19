@@ -4,6 +4,6 @@
 
 The mirror image of a [[stack]]: stack explores *deepest first*, queue processes *oldest first* — which is exactly why [[bfs]] uses a queue and [[dfs]] uses a stack.
 
-Everyday uses: task scheduling, message queues, buffering, level-order [[tree-traversal]]. Variants: **deque** (both ends), **priority queue** (highest priority out first, backed by a heap).
+Everyday uses: task scheduling, message queues, buffering, level-order [[tree-traversal]]. Variants: **deque** (both ends), [[priority-queue]] (highest priority out first, backed by a [[heap]]).
 
 Up: [[ds-theory]]

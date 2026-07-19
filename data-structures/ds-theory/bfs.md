@@ -14,7 +14,7 @@ def bfs(graph, start):
                 q.append(nb)
 ```
 
-`O(V + E)` ([[big-o]]). Key property: first time BFS reaches a node, it took the **shortest path** (fewest edges) — the reason it answers shortest-path questions on unweighted graphs. Also: level-order [[tree-traversal]], "degrees of separation", flood fill.
+`O(V + E)` ([[big-o]]). Key property: first time BFS reaches a node, it took the **shortest path** (fewest edges) — the reason it answers shortest-path questions on unweighted graphs (weighted → [[dijkstra]]). Also: level-order [[tree-traversal]], "degrees of separation", flood fill.
 
 Contrast: [[dfs]].
 

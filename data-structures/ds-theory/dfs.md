@@ -11,7 +11,7 @@ def dfs(graph, node, visited=None):
             dfs(graph, nb, visited)
 ```
 
-`O(V + E)` ([[big-o]]). Does **not** find shortest paths — it finds *a* path. Its strengths: cycle detection, topological sort (order tasks by dependency), connected components, maze solving, backtracking search. The pre/in/post orders of [[tree-traversal]] are DFS on a tree.
+`O(V + E)` ([[big-o]]). Does **not** find shortest paths — it finds *a* path. Its strengths: cycle detection, [[topological-sort]] (order tasks by dependency), connected components, maze solving, backtracking search. The pre/in/post orders of [[tree-traversal]] are DFS on a tree.
 
 Rule of thumb: shortest/nearest → [[bfs]]; exhaustive exploration, ordering, or "does a path exist" → DFS.
 

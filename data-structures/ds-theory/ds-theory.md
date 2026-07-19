@@ -9,13 +9,16 @@ Central node for the data structures & algorithms vocabulary graph. Open **Graph
 [[linked-list]] · [[stack]] · [[queue]]
 
 ## Hashing
-[[hash-table]] · [[hash-function]] · [[collision]]
+[[hash-table]] · [[hash-function]] · [[collision]] · [[set]]
 
 ## Trees
-[[tree]] · [[binary-tree]] · [[binary-search-tree]] · [[tree-traversal]]
+[[tree]] · [[binary-tree]] · [[binary-search-tree]] · [[tree-traversal]] · [[heap]] · [[trie]]
 
 ## Graphs
-[[graph]] · [[adjacency-list]] · [[bfs]] · [[dfs]]
+[[graph]] · [[adjacency-list]] · [[bfs]] · [[dfs]] · [[dijkstra]] · [[topological-sort]]
+
+## Algorithms
+[[binary-search]] · [[sorting]] · [[priority-queue]]
 
 ---
 Back: [[index]]

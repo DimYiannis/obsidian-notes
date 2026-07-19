@@ -22,18 +22,28 @@
 ### Hashing
 - [[hash-table]] — key→value in O(1) average
 - [[hash-function]] · [[collision]]
+- [[set]] — keys only; "have I seen this?" in O(1)
 
 ### Trees
 - [[tree]] — hierarchy vocabulary: root, leaf, height
 - [[binary-tree]] — ≤2 children; balance decides log n vs n
 - [[binary-search-tree]] — ordered; sorted + O(log n) search
 - [[tree-traversal]] — pre/in/post-order + level-order
+- [[heap]] — complete binary tree in an array; O(1) min/max
+- [[trie]] — prefix tree; autocomplete, longest-prefix match
 
 ### Graphs
 - [[graph]] — vertices + edges; directed, weighted
 - [[adjacency-list]] — how graphs are stored
 - [[bfs]] — queue, rings outward, shortest path
 - [[dfs]] — stack, deep first, cycles & topo sort
+- [[dijkstra]] — weighted shortest path via priority queue
+- [[topological-sort]] — dependency ordering of a DAG
+
+### Algorithms
+- [[binary-search]] — halve a sorted array, O(log n)
+- [[sorting]] — quicksort, mergesort, heapsort; the n log n floor
+- [[priority-queue]] — most urgent out first, backed by a heap
 
 ---
 

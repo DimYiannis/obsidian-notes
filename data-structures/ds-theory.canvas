@@ -25,7 +25,16 @@
 		{"id":"ll","type":"text","text":"### Linked list\nChain of nodes via `next` pointers.\n`O(1)` insert/delete at known spot, `O(n)` access.\nThe **anti-array**.","x":-700,"y":-340,"width":340,"height":210,"color":"4"},
 		{"id":"stack","type":"text","text":"### Stack — LIFO\n`push` / `pop` the **top**, both `O(1)`.\nUndo, brackets, backtracking, the call stack itself.","x":-270,"y":-340,"width":340,"height":210,"color":"4"},
 		{"id":"queue","type":"text","text":"### Queue — FIFO\n`enqueue` back / `dequeue` front, both `O(1)`.\nScheduling, buffering, level-order traversal.","x":440,"y":-340,"width":340,"height":210,"color":"4"},
-		{"id":"links","type":"text","text":"## Go deeper\n• [[index]] — map of content\n• [[cheat-sheet]] — complexity table\n• [[ds-theory]] — note-web hub\n(open Graph View for the cluster)","x":1120,"y":-415,"width":300,"height":180,"color":"3"}
+		{"id":"links","type":"text","text":"## Go deeper\n• [[index]] — map of content\n• [[cheat-sheet]] — complexity table\n• [[ds-theory]] — note-web hub\n(open Graph View for the cluster)","x":1120,"y":-415,"width":300,"height":180,"color":"3"},
+		{"id":"g-algos","type":"group","x":-720,"y":1880,"width":1600,"height":580,"color":"6","label":"5 · Algorithms & extras — search, sort, weighted paths"},
+		{"id":"heap","type":"text","text":"### Heap\n**Complete** binary tree, flat in an array — children at `2i+1`, `2i+2`.\nParent ≤ children → `peek` min `O(1)`, push/pop `O(log n)`.","x":-700,"y":1940,"width":340,"height":220,"color":"6"},
+		{"id":"pq","type":"text","text":"### Priority queue\nMost **urgent** out first, not oldest.\nBacked by a heap.\nSchedulers, top-k, Dijkstra.","x":-320,"y":1940,"width":340,"height":220,"color":"6"},
+		{"id":"bsearch","type":"text","text":"### Binary search\nSorted array: check middle, discard half, repeat → `O(log n)`.\nA BST is this idea frozen into a structure.","x":60,"y":1940,"width":340,"height":220,"color":"6"},
+		{"id":"sorting","type":"text","text":"### Sorting\nComparison floor: **`O(n log n)`**.\nQuicksort (fast, worst `n²`) · Mergesort (stable, extra mem) · Heapsort.\nBuilt-ins = timsort.","x":440,"y":1940,"width":360,"height":220,"color":"6"},
+		{"id":"dijkstra","type":"text","text":"### Dijkstra\nBFS + **priority queue** = shortest path on **weighted** graphs (non-negative).\n`O((V+E) log V)`. Negative edges → Bellman-Ford.","x":-700,"y":2200,"width":340,"height":220,"color":"6"},
+		{"id":"topo","type":"text","text":"### Topological sort\nOrder a **DAG** so edges point forward — deps before dependents.\nReversed DFS post-order, or Kahn's. Doubles as cycle detection.","x":-320,"y":2200,"width":340,"height":220,"color":"6"},
+		{"id":"trie","type":"text","text":"### Trie\nPrefix tree — each edge one char, key = path.\nLookup `O(key length)`.\nAutocomplete, longest-prefix match.","x":60,"y":2200,"width":340,"height":220,"color":"6"},
+		{"id":"set","type":"text","text":"### Set\nHash table, keys only.\n\"Seen before?\" in `O(1)`.\nDedup, visited sets, union/intersection.","x":440,"y":2200,"width":360,"height":220,"color":"6"}
 	],
 	"edges":[
 		{"id":"e1","fromNode":"array","fromSide":"bottom","toNode":"ll","toSide":"top","label":"opposite trade-off"},
@@ -45,6 +54,14 @@
 		{"id":"e15","fromNode":"queue","fromSide":"bottom","toNode":"bfs","toSide":"top","label":"drives"},
 		{"id":"e16","fromNode":"stack","fromSide":"bottom","toNode":"dfs","toSide":"top","label":"drives"},
 		{"id":"e17","fromNode":"trav","fromSide":"bottom","toNode":"dfs","toSide":"top","label":"pre/in/post ="},
-		{"id":"e18","fromNode":"dfs","fromSide":"bottom","toNode":"thread","toSide":"top"}
+		{"id":"e18","fromNode":"dfs","fromSide":"bottom","toNode":"thread","toSide":"top"},
+		{"id":"e19","fromNode":"btree","fromSide":"bottom","toNode":"heap","toSide":"top","label":"complete + in array"},
+		{"id":"e20","fromNode":"heap","fromSide":"right","toNode":"pq","toSide":"left","label":"implements"},
+		{"id":"e21","fromNode":"pq","fromSide":"bottom","toNode":"dijkstra","toSide":"top","label":"drives"},
+		{"id":"e22","fromNode":"bfs","fromSide":"bottom","toNode":"dijkstra","toSide":"top","label":"+ weights"},
+		{"id":"e23","fromNode":"dfs","fromSide":"bottom","toNode":"topo","toSide":"top","label":"post-order reversed"},
+		{"id":"e24","fromNode":"sorting","fromSide":"left","toNode":"bsearch","toSide":"right","label":"enables"},
+		{"id":"e25","fromNode":"ht","fromSide":"bottom","toNode":"set","toSide":"top","label":"drop values"},
+		{"id":"e26","fromNode":"tree","fromSide":"bottom","toNode":"trie","toSide":"top","label":"keys as paths"}
 	]
 }
