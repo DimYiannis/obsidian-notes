@@ -8,6 +8,7 @@
 ## Notes
 
 - [[cheat-sheet]] — complexity table + which-structure-when + interview one-liners
+- [[ds-theory.canvas|DS theory — the essence (canvas)]] — all terms grouped + the thread tying them
 - [[ds-theory]] — hub of the vocabulary note-web (open Graph View to explore)
 
 ### Building blocks

@@ -11,14 +11,17 @@
             "id": "afda7a8c8b1a63a5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "ds-theory/hash-table.md",
-                "mode": "source",
-                "source": false
+                "file": "ds-theory.canvas",
+                "viewState": {
+                  "x": -123.11583774144052,
+                  "y": 1762.2360133893817,
+                  "zoom": -0.36059114538291753
+                }
               },
-              "icon": "lucide-file",
-              "title": "hash-table"
+              "icon": "lucide-layout-dashboard",
+              "title": "ds-theory"
             }
           }
         ]
@@ -94,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ds-theory/hash-table.md",
+                "file": "ds-theory.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +107,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for hash-table"
+              "title": "Backlinks for ds-theory"
             }
           },
           {
@@ -113,12 +116,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ds-theory/hash-table.md",
+                "file": "ds-theory.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from hash-table"
+              "title": "Outgoing links from ds-theory"
             }
           },
           {
@@ -156,13 +159,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ds-theory/hash-table.md",
+                "file": "ds-theory.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of hash-table"
+              "title": "Outline of ds-theory"
             }
           }
         ]
@@ -185,6 +188,8 @@
   },
   "active": "afda7a8c8b1a63a5",
   "lastOpenFiles": [
+    "ds-theory/hash-table.md",
+    "ds-theory.canvas",
     "ds-theory/hash-function.md",
     "ds-theory/graph.md",
     "ds-theory/ds-theory.md",
