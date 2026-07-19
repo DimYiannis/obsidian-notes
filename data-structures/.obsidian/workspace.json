@@ -11,17 +11,14 @@
             "id": "afda7a8c8b1a63a5",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "ds-theory.canvas",
-                "viewState": {
-                  "x": -123.11583774144052,
-                  "y": 1762.2360133893817,
-                  "zoom": -0.36059114538291753
-                }
+                "file": "cheat-sheet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "ds-theory"
+              "icon": "lucide-file",
+              "title": "cheat-sheet"
             }
           }
         ]
@@ -97,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ds-theory.canvas",
+                "file": "cheat-sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ds-theory"
+              "title": "Backlinks for cheat-sheet"
             }
           },
           {
@@ -116,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ds-theory.canvas",
+                "file": "cheat-sheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from ds-theory"
+              "title": "Outgoing links from cheat-sheet"
             }
           },
           {
@@ -159,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ds-theory.canvas",
+                "file": "cheat-sheet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ds-theory"
+              "title": "Outline of cheat-sheet"
             }
           }
         ]
@@ -188,6 +185,9 @@
   },
   "active": "afda7a8c8b1a63a5",
   "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "ds-theory.canvas",
     "ds-theory/set.md",
     "ds-theory/trie.md",
     "ds-theory/topological-sort.md",
@@ -197,7 +197,6 @@
     "ds-theory/priority-queue.md",
     "ds-theory/heap.md",
     "ds-theory/hash-table.md",
-    "ds-theory.canvas",
     "ds-theory/hash-function.md",
     "ds-theory/graph.md",
     "ds-theory/ds-theory.md",
@@ -209,7 +208,6 @@
     "ds-theory/bfs.md",
     "ds-theory/array.md",
     "ds-theory/adjacency-list.md",
-    "cheat-sheet.md",
-    "index.md"
+    "cheat-sheet.md"
   ]
 }

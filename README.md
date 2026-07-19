@@ -8,6 +8,7 @@ Personal knowledge base. Each folder is a separate Obsidian vault.
 - **rag-against-the-machine** — theory notes for the Codam RAG project: study guide, concept hub, workflow canvas (BM25 retrieval, chunking, evaluation).
 - **call-me-maybe** — notes for the function-calling project: constrained decoding workflow canvas.
 - **net_practise** — networking basics for NetPractice: IP addressing, subnetting, routing canvases.
+- **data-structures** — DSA fundamentals: hash tables, lists, stacks/queues, trees, graph traversal. Note-web + canvas + cheat sheet. See `data-structures/README.md` for why these matter.
 
 ## Usage
 
