@@ -88,6 +88,14 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - Note: flagged ⚠️-style caveat on feed-forward-network — paper studies attention-only models, does NOT establish the "MLP processes" claim from user's transformer explainer
 - Pages created: 4 | Pages updated: 4
 
+## [2026-07-28] ingest | Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (Lewis et al., 2020)
+- Source: arxiv.org/abs/2005.11401 (source_type: paper; fetched via web) — the original RAG paper, primary source underlying the earlier study-guide ingest
+- Source page created: wiki/sources/2026-07-28-lewis-et-al-2020-retrieval-augmented-generation.md
+- Raw capture: .raw/2026-07-28-lewis-et-al-2020-rag-paper.md
+- Entities created: facebook-ai-research
+- Concepts updated: retrieval-augmented-generation (source_count→2, added origin architecture: DPR+BART, RAG-Sequence/Token, index hot-swap, quantified hallucination reduction, retriever-collapse failure mode), dense-retrieval (source_count→2, added DPR/MIPS as concrete example)
+- Pages created: 3 | Pages updated: 3
+
 ## [2026-07-12] ingest | RAG Theory — Study Context
 - Source: .raw/2026-07-12-rag-theory-study-guide.md (local note; study guide for Codam RAG project)
 - Concepts created: retrieval-augmented-generation, information-retrieval, lexical-retrieval, tf-idf, bm25, inverted-index, retrieval-tokenization, dense-retrieval, chunking, retrieval-evaluation, grounding, lost-in-the-middle

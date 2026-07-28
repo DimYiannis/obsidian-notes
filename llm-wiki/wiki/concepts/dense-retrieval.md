@@ -2,7 +2,7 @@
 title: "Dense Retrieval"
 type: concept
 tags: [information-retrieval, embeddings, semantic-search]
-source_count: 1
+source_count: 2
 ---
 
 ## Definition
@@ -18,6 +18,7 @@ Retrieval by semantic similarity in vector space: an embedding model maps querie
 
 ## Examples
 
+- **DPR** (Dense Passage Retriever, Karpukhin et al., used in Lewis et al. 2020's original RAG paper): BERT bi-encoder producing query/document vectors, retrieval via Maximum Inner Product Search (MIPS) over a 21M-passage Wikipedia index. The retriever component paired with BART to make the original RAG model.
 - Sentence-transformer embeddings + FAISS/HNSW nearest-neighbor search — the standard RAG-tutorial stack.
 - *RAG Against the Machine* deliberately does **not** use dense retrieval for the mandatory part: lexical wins on exact identifiers, needs no model, is fast and explainable.
 
@@ -26,7 +27,8 @@ Retrieval by semantic similarity in vector space: an embedding model maps querie
 - [[embeddings]] — the representation dense retrieval is built on (document/query-level rather than token-level)
 - [[lexical-retrieval]] — the complementary paradigm; hybrid RRF combines both
 - [[bm25]] — the lexical baseline dense methods are measured against
-- [[retrieval-augmented-generation]] — the most common RAG retrieval choice in industry tutorials, not always the right one
+- [[retrieval-augmented-generation]] — DPR is the retriever the original RAG paper paired with a generator; the most common RAG retrieval choice in industry tutorials, not always the right one
+- [[facebook-ai-research]] — origin of DPR
 
 ## Open Questions
 

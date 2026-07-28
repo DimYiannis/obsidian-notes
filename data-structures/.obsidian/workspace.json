@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cheat-sheet.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cheat-sheet"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cheat-sheet.md",
+                "file": "ds-theory.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for cheat-sheet"
+              "title": "Backlinks for ds-theory"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cheat-sheet.md",
+                "file": "ds-theory.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from cheat-sheet"
+              "title": "Outgoing links from ds-theory"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cheat-sheet.md",
+                "file": "ds-theory.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of cheat-sheet"
+              "title": "Outline of ds-theory"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "afda7a8c8b1a63a5",
   "lastOpenFiles": [
-    "README.md",
-    "index.md",
     "ds-theory.canvas",
+    "cheat-sheet.md",
+    "index.md",
+    "README.md",
     "ds-theory/set.md",
     "ds-theory/trie.md",
     "ds-theory/topological-sort.md",
@@ -207,7 +208,6 @@
     "ds-theory/big-o.md",
     "ds-theory/bfs.md",
     "ds-theory/array.md",
-    "ds-theory/adjacency-list.md",
-    "cheat-sheet.md"
+    "ds-theory/adjacency-list.md"
   ]
 }

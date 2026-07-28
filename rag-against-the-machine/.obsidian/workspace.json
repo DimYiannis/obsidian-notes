@@ -11,14 +11,17 @@
             "id": "bc4db71abd76afb0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "1. Corpus & data models.md",
-                "mode": "source",
-                "source": false
+                "file": "RAG General Knowledge.canvas",
+                "viewState": {
+                  "x": 549.1121848761718,
+                  "y": 843.5256415706904,
+                  "zoom": -0.5753318142026831
+                }
               },
-              "icon": "lucide-file",
-              "title": "1. Corpus & data models"
+              "icon": "lucide-layout-dashboard",
+              "title": "RAG General Knowledge"
             }
           }
         ]
@@ -185,8 +188,10 @@
   },
   "active": "bc4db71abd76afb0",
   "lastOpenFiles": [
-    "0. Overview.md",
     "RAG workflow.canvas",
+    "RAG General Knowledge.canvas",
+    "1. Corpus & data models.md",
+    "0. Overview.md",
     "7. Evaluate.md",
     "concepts.md",
     "context.md"

@@ -18,6 +18,7 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - 2026-06-13-attention-is-all-you-need — Vaswani et al. (2017); the Transformer; self-attention, multi-head, Q/K/V, softmax(QKᵀ/√dₖ)V; WMT 2014 SOTA
 - 2026-06-13-transformer-circuits-framework — Elhage et al. (2021, Anthropic); mechanistic interpretability; residual stream, QK/OV circuits, induction heads; attention-only (MLP caveat)
 - 2026-07-12-rag-theory-study-guide — layered RAG theory guide for the Codam project; IR foundations, TF-IDF→BM25, chunking, recall@k/IoU, grounding
+- 2026-07-28-lewis-et-al-2020-retrieval-augmented-generation — Lewis et al. (2020, NeurIPS); the original RAG paper; DPR+BART, RAG-Sequence/Token, SOTA open-domain QA, index hot-swap
 
 ---
 
@@ -34,6 +35,7 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - deepseek-r1 — open-weight reasoning model; first public RL training paper for LLMs (source_count: 1)
 - alphago — DeepMind Go AI; historical RL precedent for surpassing human performance (source_count: 1)
 - rag-against-the-machine — Codam project: BM25 RAG over vLLM 0.10.1, Qwen3-0.6B, recall@k graded (source_count: 1)
+- facebook-ai-research — FAIR; introduced RAG, DPR; Lewis et al. 2020 (source_count: 1)
 
 ---
 
@@ -53,14 +55,14 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - context-window — working memory; measured in tokens; effective context scales with tokenization quality (source_count: 4)
 
 ### Retrieval / RAG
-- retrieval-augmented-generation — retrieve then generate; parametric vs non-parametric knowledge; recall-first asymmetry (source_count: 1)
+- retrieval-augmented-generation — retrieve then generate; parametric vs non-parametric knowledge; recall-first asymmetry; DPR+BART, RAG-Seq/Token, index hot-swap (source_count: 2)
 - information-retrieval — query/document/corpus/relevance; the 50-year-old field behind RAG retrieval (source_count: 1)
 - lexical-retrieval — exact term matching over bag-of-words; strong on identifiers, weak on synonyms (source_count: 1)
 - tf-idf — term frequency × inverse document frequency; BM25's pedagogical predecessor (source_count: 1)
 - bm25 — TF saturation (k1) + length normalization (b) over IDF; the project's retriever (source_count: 1)
 - inverted-index — term → posting list; why lexical search is fast; heapq top-k (source_count: 1)
 - retrieval-tokenization — analysis for search: identifier splitting, keep-original rule, same analyzer both sides (source_count: 1)
-- dense-retrieval — embedding vectors + nearest neighbor; solves vocabulary mismatch, blurs identifiers; RRF hybrid (source_count: 1)
+- dense-retrieval — embedding vectors + nearest neighbor; solves vocabulary mismatch, blurs identifiers; RRF hybrid; DPR/MIPS example (source_count: 2)
 - chunking — retrieval granularity; fixed/sliding/structure-aware; size vs IoU tradeoff (source_count: 1)
 - retrieval-evaluation — recall@k, precision@k, IoU span overlap; recall at retrieval, precision at generation (source_count: 1)
 - grounding — answer from retrieved context, not parametric memory; faithfulness ≠ correctness (source_count: 1)
