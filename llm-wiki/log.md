@@ -96,6 +96,18 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - Concepts updated: retrieval-augmented-generation (source_count→2, added origin architecture: DPR+BART, RAG-Sequence/Token, index hot-swap, quantified hallucination reduction, retriever-collapse failure mode), dense-retrieval (source_count→2, added DPR/MIPS as concrete example)
 - Pages created: 3 | Pages updated: 3
 
+## [2026-07-29] meta | Expanded inverted-index and dense-retrieval with worked examples
+- No new source; deepened existing concept pages from chat discussion
+- inverted-index.md: added worked cat/dog forward→inverted build example, contrast case showing zero-term-overlap miss
+- dense-retrieval.md: added Index Structures section (HNSW, IVF, Product Quantization mechanics), speed/recall dial note, distance-metric-must-match-training note, worked embedding-similarity example
+- Cross-linked both pages' new examples to each other
+- Pages created: 0 | Pages updated: 2
+
+## [2026-07-29] meta | Reformatted examples as code blocks; added hash-map-vs-ANN-index distinction
+- inverted-index.md, dense-retrieval.md: moved worked examples out of prose bullets into fenced code blocks
+- Added Key Properties bullet to both clarifying they use different underlying data structures — inverted index is a hash map (exact key lookup), dense retrieval needs ANN structures (HNSW/IVF) since vectors have no exact-match concept. Noted IVF ("Inverted File Index") borrows the name/bucket idea but clusters vectors, not terms
+- Pages created: 0 | Pages updated: 2
+
 ## [2026-07-12] ingest | RAG Theory — Study Context
 - Source: .raw/2026-07-12-rag-theory-study-guide.md (local note; study guide for Codam RAG project)
 - Concepts created: retrieval-augmented-generation, information-retrieval, lexical-retrieval, tf-idf, bm25, inverted-index, retrieval-tokenization, dense-retrieval, chunking, retrieval-evaluation, grounding, lost-in-the-middle

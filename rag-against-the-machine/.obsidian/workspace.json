@@ -15,9 +15,9 @@
               "state": {
                 "file": "RAG workflow.canvas",
                 "viewState": {
-                  "x": -2820.476270128919,
-                  "y": -2540.313923539206,
-                  "zoom": -0.08119659844661295
+                  "x": -2809.1029660447007,
+                  "y": -2580.614125782038,
+                  "zoom": -0.25162841089344334
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -188,10 +188,10 @@
   },
   "active": "bc4db71abd76afb0",
   "lastOpenFiles": [
-    "RAG Glossary.md",
     "RAG General Knowledge.canvas",
-    "0. Overview.md",
+    "RAG Glossary.md",
     "RAG workflow.canvas",
+    "0. Overview.md",
     "1. Corpus & data models.md",
     "7. Evaluate.md",
     "concepts.md",

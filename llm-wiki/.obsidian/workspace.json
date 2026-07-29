@@ -11,13 +11,32 @@
             "id": "5588223f3452224a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/inverted-index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "inverted-index"
+            }
+          },
+          {
+            "id": "c5d22ca30a9740d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/dense-retrieval.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dense-retrieval"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -176,15 +196,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "5588223f3452224a",
+  "active": "c5d22ca30a9740d7",
   "lastOpenFiles": [
+    "wiki/concepts/inverted-index.md",
+    "wiki/concepts/dense-retrieval.md",
+    "wiki/concepts/lexical-retrieval.md",
+    "wiki/concepts/information-retrieval.md",
+    "wiki/concepts/retrieval-augmented-generation.md",
+    "wiki/concepts/chunking.md",
+    "wiki/concepts/context-window.md",
     "wiki/entities/facebook-ai-research.md",
     "wiki/sources/2026-07-28-lewis-et-al-2020-retrieval-augmented-generation.md",
-    "wiki/concepts/retrieval-augmented-generation.md",
     "wiki/concepts/tokenization.md",
     "CLAUDE.md",
     "index.md",
-    "wiki/concepts/context-window.md",
     "wiki/sources/2026-06-13-attention-is-all-you-need.md",
     "wiki/entities/xgrammar.md",
     "wiki/concepts/constrained-decoding.md",
@@ -200,12 +225,7 @@
     "wiki/concepts/feed-forward-network.md",
     "wiki/concepts/query-key-value.md",
     "wiki/concepts/draft-conditioned-decoding.md",
-    "wiki/sources/2026-06-08-dccd.md",
     "wiki/sources/2026-06-08-dccd.md.tmp.48189.cfd78849030f",
-    "wiki/sources/2026-06-08-dont-fine-tune-decode.md",
-    "wiki/sources/2026-06-01-call-me-maybe.md",
-    "wiki/sources/2026-06-01-constrained-decoding-function-calling.md",
-    "wiki/entities/alphago.md",
     "wiki/sources",
     "notes",
     "wiki/synthesis",
