@@ -116,3 +116,11 @@ Append-only. Parse with: `grep "^## \[" log.md | tail -10`
 - Entities updated: vllm (→2, corpus role)
 - New index section: Retrieval / RAG
 - Pages created: 14 | Pages updated: 6
+
+## [2026-08-02] meta | Added general RAG theory to chunking (why chunk at all, why not whole docs/sentences)
+- No new source; deepened chunking.md from chat discussion, distinct from the project-specific (RAG Against the Machine / IoU) content already there
+- chunking.md: added "core problem chunking solves" (finite context window vs large corpus — RAG's retrieve-then-generate premise), "why not whole documents" (precision/context waste, ranking granularity, lost-in-the-middle), "why not smaller than a chunk" (loses surrounding context)
+- Relabeled existing IoU/2000-char bullet as project-specific; added general size-tradeoff bullet alongside it
+- Added [[lost-in-the-middle]] to Connections
+- index.md: updated chunking one-line description
+- Pages created: 0 | Pages updated: 1

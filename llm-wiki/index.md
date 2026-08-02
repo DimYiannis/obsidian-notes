@@ -63,7 +63,7 @@ Visible in graph: `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/m
 - inverted-index — term → posting list; why lexical search is fast; heapq top-k (source_count: 1)
 - retrieval-tokenization — analysis for search: identifier splitting, keep-original rule, same analyzer both sides (source_count: 1)
 - dense-retrieval — embedding vectors + nearest neighbor; solves vocabulary mismatch, blurs identifiers; RRF hybrid; DPR/MIPS example (source_count: 2)
-- chunking — retrieval granularity; fixed/sliding/structure-aware; size vs IoU tradeoff (source_count: 1)
+- chunking — why chunk at all (finite context vs large corpus), why not whole docs/sentences, fixed/sliding/structure-aware, size tradeoff (source_count: 1)
 - retrieval-evaluation — recall@k, precision@k, IoU span overlap; recall at retrieval, precision at generation (source_count: 1)
 - grounding — answer from retrieved context, not parametric memory; faithfulness ≠ correctness (source_count: 1)
 - lost-in-the-middle — U-shaped attention over long context; chunk ordering matters (source_count: 1)
